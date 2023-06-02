@@ -1,4 +1,4 @@
-/home/rae/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.19.2-43.2.3_mapped_official_1.19.2/forge-1.19.2-43.2.3_mapped_official_1.19.2.jar
+/home/rae/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.19.2-43.2.3_mapped_official_1.19.2/forge-1.19.2-43.2.3_mapped_official_1.19.2-recomp.jar
 /home/rae/.gradle/caches/forge_gradle/minecraft_repo/versions/1.19.2/client-extra.jar
 /home/rae/.gradle/caches/modules-2/files-2.1/net.minecraftforge/javafmllanguage/1.19.2-43.2.3/45687785dd2c4c0a44768b7d49d78a7d0d95a074/javafmllanguage-1.19.2-43.2.3.jar
 /home/rae/.gradle/caches/modules-2/files-2.1/net.minecraftforge/lowcodelanguage/1.19.2-43.2.3/a277cdb1c183feb61bfc17268fa67689c1c111dc/lowcodelanguage-1.19.2-43.2.3.jar
