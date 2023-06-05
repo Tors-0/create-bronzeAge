@@ -1,0 +1,25 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "coolmod:tin_ingot"
+    },
+    {
+      "item": "minecraft:copper_ingot",
+      "count": 3
+    }
+  ],
+  "results": [
+    {
+      "item": "coolmod:bronze_ingot",
+      "count": 4
+    }
+  ],
+  "heatRequirement": "heated"
+}
