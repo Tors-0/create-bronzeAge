@@ -3,5 +3,9 @@
   "item.coolmod.tin_ingot": "Tin Ingot",
   "item.coolmod.raw_tin": "Raw Tin",
 
+  "block.coolmod.tin_block": "Block of Tin",
+  "block.coolmod.tin_ore": "Tin Ore",
+  "block.coolmod.deepslate_tin_ore": "Deepslate Tin Ore",
+
   "itemGroup.cooltab": "The Bronze Age"
 }

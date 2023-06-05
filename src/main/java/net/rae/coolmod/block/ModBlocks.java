@@ -27,13 +27,13 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
                     .requiresCorrectToolForDrops()
                     .explosionResistance(6).strength(3)), ModCreativeModeTab.COOL_TAB);
-    public static final RegistryObject<Block> TIN_ORE = registerBlock("tin_block",
+    public static final RegistryObject<Block> TIN_ORE = registerBlock("tin_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.METAL)
                     .requiresCorrectToolForDrops().explosionResistance(6).strength(3),
                     UniformInt.of(3,7)), ModCreativeModeTab.COOL_TAB);
-    public static final RegistryObject<Block> DEEPSLATE_TIN_ORE = registerBlock("tin_block",
+    public static final RegistryObject<Block> DEEPSLATE_TIN_ORE = registerBlock("deepslate_tin_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.METAL)
-                    .requiresCorrectToolForDrops().explosionResistance(7).strength(4),
+                    .requiresCorrectToolForDrops().explosionResistance(6).strength(4),
                     UniformInt.of(3,7)), ModCreativeModeTab.COOL_TAB);
 
     // END BLOCKS
