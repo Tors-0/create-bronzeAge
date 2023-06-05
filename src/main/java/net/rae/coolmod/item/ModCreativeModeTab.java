@@ -1,4 +1,4 @@
-package net.rae.coolmod.items;
+package net.rae.coolmod.item;
 
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
