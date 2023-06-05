@@ -1,5 +1,7 @@
 {
   "item.coolmod.bronze_ingot": "Bronze Ingot",
+  "item.coolmod.tin_ingot": "Tin Ingot",
+  "item.coolmod.raw_tin": "Raw Tin",
 
-  "itemGroup.cooltab": "Cool Mod"
+  "itemGroup.cooltab": "The Bronze Age"
 }
