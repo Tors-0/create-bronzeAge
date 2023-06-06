@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "#bronze_age:tin_ores",
+    "bronze_age:tin_block",
+    "bronze_age:bronze_block"
+  ]
+}
