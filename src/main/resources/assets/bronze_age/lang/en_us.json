@@ -1,0 +1,12 @@
+{
+  "item.bronze_age.bronze_ingot": "Bronze Ingot",
+  "item.bronze_age.tin_ingot": "Tin Ingot",
+  "item.bronze_age.raw_tin": "Raw Tin",
+
+  "block.bronze_age.tin_block": "Block of Tin",
+  "block.bronze_age.bronze_block": "Block of Bronze",
+  "block.bronze_age.tin_ore": "Tin Ore",
+  "block.bronze_age.deepslate_tin_ore": "Deepslate Tin Ore",
+
+  "itemGroup.cooltab": "Bronze Age"
+}

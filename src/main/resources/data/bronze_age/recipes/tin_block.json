@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "bronze_age:tin_ingot"
+    }
+  },
+  "result": {
+    "item": "bronze_age:tin_block"
+  }
+}

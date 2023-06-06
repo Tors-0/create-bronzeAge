@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "bronze_age:bronze_ingot"
+    }
+  },
+  "result": {
+    "item": "bronze_age:bronze_block"
+  }
+}

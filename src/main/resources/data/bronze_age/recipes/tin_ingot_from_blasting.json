@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "ingredient": {
+    "tag": "bronze_age:tin_smeltable"
+  },
+  "result": "bronze_age:tin_ingot"
+}

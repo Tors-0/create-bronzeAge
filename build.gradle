@@ -5,8 +5,8 @@ plugins {
 }
 
 version = '0.0.1-1.19.2'
-group = 'net.rae.coolmod' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = 'coolmod'
+group = 'net.rae.bronze_age' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = 'bronze_age'
 
 // Mojang ships Java 17 to end users in 1.18+, so your mod should target Java 17.
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
@@ -49,10 +49,10 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
-            property 'forge.enabledGameTestNamespaces', 'coolmod'
+            property 'forge.enabledGameTestNamespaces', 'bronze_age'
 
             mods {
-                coolmod {
+                bronze_age {
                     source sourceSets.main
                 }
             }
@@ -65,10 +65,10 @@ minecraft {
 
             property 'forge.logging.console.level', 'debug'
 
-            property 'forge.enabledGameTestNamespaces', 'coolmod'
+            property 'forge.enabledGameTestNamespaces', 'bronze_age'
 
             mods {
-                coolmod {
+                bronze_age {
                     source sourceSets.main
                 }
             }
@@ -84,10 +84,10 @@ minecraft {
 
             property 'forge.logging.console.level', 'debug'
 
-            property 'forge.enabledGameTestNamespaces', 'coolmod'
+            property 'forge.enabledGameTestNamespaces', 'bronze_age'
 
             mods {
-                coolmod {
+                bronze_age {
                     source sourceSets.main
                 }
             }
@@ -101,10 +101,10 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
-            args '--mod', 'coolmod', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+            args '--mod', 'bronze_age', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
 
             mods {
-                coolmod {
+                bronze_age {
                     source sourceSets.main
                 }
             }
@@ -138,7 +138,7 @@ dependencies {
     // Specify the version of Minecraft to use. If this is any group other than 'net.minecraft', it is assumed
     // that the dep is a ForgeGradle 'patcher' dependency, and its patches will be applied.
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
-    minecraft 'net.minecraftforge:forge:1.19.2-43.2.3'
+    minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
 
     // Real mod deobf dependency examples - these get remapped to your current mappings
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api") // Adds JEI API as a compile dependency
@@ -146,7 +146,7 @@ dependencies {
     // implementation fg.deobf("com.tterrag.registrate:Registrate:MC${mc_version}-${registrate_version}") // Adds registrate as a dependency
 
     // Examples using mod jars from ./libs
-    // implementation fg.deobf("blank:coolmod-${mc_version}:${coolmod_version}")
+    // implementation fg.deobf("blank:bronze_age-${mc_version}:${bronze_age_version}")
 
     // For more info...
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
@@ -157,12 +157,12 @@ dependencies {
 jar {
     manifest {
         attributes([
-                "Specification-Title"     : "coolmod",
-                "Specification-Vendor"    : "coolmodsareus",
+                "Specification-Title"     : "bronze_age",
+                "Specification-Vendor"    : "bronze_agesareus",
                 "Specification-Version"   : "1", // We are version 1 of ourselves
                 "Implementation-Title"    : project.name,
                 "Implementation-Version"  : project.jar.archiveVersion,
-                "Implementation-Vendor"   : "coolmodsareus",
+                "Implementation-Vendor"   : "bronze_agesareus",
                 "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }

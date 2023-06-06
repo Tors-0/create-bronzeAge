@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "bronze_age:tin_block"
+    }
+  ],
+  "result": {
+    "item": "bronze_age:tin_ingot",
+    "count": 9
+  }
+}
