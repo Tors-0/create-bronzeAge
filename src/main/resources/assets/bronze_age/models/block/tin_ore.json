@@ -1,5 +1,6 @@
 {
-  "variants": {
-    "": { "model":  "bronze_age:block/tin_ore" }
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "bronze_age:block/tin_ore"
   }
 }
