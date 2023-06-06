@@ -11,8 +11,13 @@
       "item": "coolmod:tin_ingot"
     },
     {
-      "item": "minecraft:copper_ingot",
-      "count": 3
+      "item": "minecraft:copper_ingot"
+    },
+    {
+      "item": "minecraft:copper_ingot"
+    },
+    {
+      "item": "minecraft:copper_ingot"
     }
   ],
   "results": [
