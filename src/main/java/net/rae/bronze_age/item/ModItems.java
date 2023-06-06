@@ -11,6 +11,10 @@ public class ModItems {
 
     public static final RegistryObject<Item> BRONZE_INGOT = ITEMS.register("bronze_ingot",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
+    public static final RegistryObject<Item> BRONZE_GEAR = ITEMS.register("bronze_gear",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
+    public static final RegistryObject<Item> SMALL_BRONZE_GEAR = ITEMS.register("small_bronze_gear",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
     public static final RegistryObject<Item> TIN_INGOT = ITEMS.register("tin_ingot",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
     public static final RegistryObject<Item> RAW_TIN = ITEMS.register("raw_tin",
