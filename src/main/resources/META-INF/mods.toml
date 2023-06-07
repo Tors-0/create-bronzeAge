@@ -60,6 +60,7 @@ New tools and recipes based on Bronze!
     modId="create"
     mandatory=true
     versionRange="[0.5.1,)"
+    ordering="AFTER"
     side="BOTH"
 # Here's another dependency
 [[dependencies.bronze_age]]
