@@ -18,21 +18,23 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
     public static final RegistryObject<Item> SMALL_BRONZE_GEAR = ITEMS.register("small_bronze_gear",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
+    public static final RegistryObject<Item> BRONZE_NUGGET = ITEMS.register("bronze_nugget",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
     public static final RegistryObject<Item> TIN_INGOT = ITEMS.register("tin_ingot",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
     public static final RegistryObject<Item> RAW_TIN = ITEMS.register("raw_tin",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
 
     public static final RegistryObject<SwordItem> BRONZE_GLADIUS = ITEMS.register("bronze_gladius",
-            () -> new SwordItem(Tiers.BRONZE,6,1.6f, props()));
+            () -> new SwordItem(Tiers.BRONZE,3,-2.4f, props()));
     public static final RegistryObject<PickaxeItem> BRONZE_PICKAXE = ITEMS.register("bronze_pickaxe",
-            () -> new PickaxeItem(Tiers.BRONZE, 4, 1.2f, props()));
+            () -> new PickaxeItem(Tiers.BRONZE, 1, -2.8f, props()));
     public static final RegistryObject<ShovelItem> BRONZE_SHOVEL = ITEMS.register("bronze_shovel",
-            () -> new ShovelItem(Tiers.BRONZE,5f,1,props()));
+            () -> new ShovelItem(Tiers.BRONZE,1.5f,-3.0f, props()));
     public static final RegistryObject<AxeItem> BRONZE_AXE = ITEMS.register("bronze_axe",
-            () -> new AxeItem(Tiers.BRONZE, 9, 0.85f,props()));
+            () -> new AxeItem(Tiers.BRONZE, 6.0f, -3.1f,props()));
     public static final RegistryObject<HoeItem> BRONZE_HOE = ITEMS.register("bronze_hoe",
-            () -> new HoeItem(Tiers.BRONZE, 1,2.5f,props()));
+            () -> new HoeItem(Tiers.BRONZE, -2,-1.0f,props()));
 
     private static Item.Properties props() {
         return new Item.Properties().tab(ModCreativeModeTab.COOL_TAB);
@@ -45,9 +47,9 @@ public class ModItems {
     public static class Tiers {
         public static final Tier BRONZE = new ForgeTier(
                 2,
-                500,
+                420,
                 6.5f,
-                2.5f,
+                2.0f,
                 15,
                 BlockTags.MINEABLE_WITH_PICKAXE,
                 () -> Ingredient.of(ModItems.BRONZE_INGOT.get()));
