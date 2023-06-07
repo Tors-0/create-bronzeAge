@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "bronze_age:bronze_ingot"
+    }
+  ],
+  "results": [
+    {
+      "item": "bronze_age:bronze_plate"
+    }
+  ]
+}

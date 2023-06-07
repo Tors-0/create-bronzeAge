@@ -17,7 +17,7 @@ public class ModPlacedFeatures {
 
     public static final RegistryObject<PlacedFeature> TIN_ORE_PLACED = PLACED_FEATURES.register("tin_ore_placed",
             () -> new PlacedFeature(ModConfiguredFeatures.TIN_ORE.getHolder().get(),
-                    commonOrePlacement(7, // Veins per chunk
+                    commonOrePlacement(6, // Veins per chunk
                             HeightRangePlacement.uniform(VerticalAnchor.absolute(-16), VerticalAnchor.absolute(32)))));
 
     public static List<PlacementModifier> orePlacement(PlacementModifier p_195347_, PlacementModifier p_195348_) {

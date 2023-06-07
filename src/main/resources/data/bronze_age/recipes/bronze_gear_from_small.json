@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "bronze_age:small_bronze_gear"
+    },
+    "X": {
+      "item": "bronze_age:bronze_nugget"
+    }
+  },
+  "pattern": [
+    " X ",
+    "X#X",
+    " X "
+  ],
+  "result": {
+    "item": "bronze_age:bronze_gear"
+  }
+}
