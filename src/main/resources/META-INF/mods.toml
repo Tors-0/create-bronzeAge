@@ -15,7 +15,7 @@ license="GNU GPLv3"
 # A list of mods - how many allowed here is determined by the individual mod loader
 [[mods]] #mandatory
 # The modid of the mod
-modId= "bronze_age" #mandatory
+modId="bronze_age" #mandatory
 # The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
 # ${file.jarVersion} will substitute the value of the Implementation-Version as read from the mod's JAR file metadata
 # see the associated build.gradle script for how to populate this completely automatically during a build
@@ -56,12 +56,12 @@ A precise mechanical expansion of the Create mod
     ordering="NONE"
     # Side this dependency is applied on - BOTH, CLIENT or SERVER
     side="BOTH"
-[[dependencies.bronze_age]]
-    modId="create"
-    mandatory=true
-    versionRange="[0.5.1,)"
-    ordering="AFTER"
-    side="BOTH"
+#[[dependencies.bronze_age]]
+#    modId="create"
+#    mandatory=true
+#    versionRange="[0.5.1,)"
+#    ordering="AFTER"
+#    side="BOTH"
 # Here's another dependency
 [[dependencies.bronze_age]]
     modId="minecraft"
