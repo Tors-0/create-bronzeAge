@@ -8,7 +8,7 @@
   "type": "create:compacting",
   "ingredients": [
     {
-      "amount": 1000,
+      "amount": 810,
       "fluid": "bronze_age:molten_bronze_fluid"
     }
   ],
