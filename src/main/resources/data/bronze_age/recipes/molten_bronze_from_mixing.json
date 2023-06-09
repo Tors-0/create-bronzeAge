@@ -22,8 +22,8 @@
   ],
   "results": [
     {
-      "item": "bronze_age:bronze_ingot",
-      "count": 4
+      "amount": 444,
+      "fluid": "bronze_age:molten_bronze_fluid"
     }
   ],
   "heatRequirement": "heated"
