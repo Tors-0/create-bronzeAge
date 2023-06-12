@@ -23,16 +23,15 @@ public class ModFluidTypes {
 
     public static final RegistryObject<FluidType> MOLTEN_BRONZE_FLUID_TYPE = register("molten_bronze_fluid",
             FluidType.Properties.create().lightLevel(15).density(3000).viscosity(6000)
-                    .sound(SoundAction.get("drink"), SoundEvents.PLAYER_HURT)
                     .sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL_LAVA)
                     .sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY_LAVA)
-                    .temperature(1100).pathType(BlockPathTypes.LAVA).adjacentPathType(null)
+                    .temperature(1300).pathType(BlockPathTypes.LAVA).adjacentPathType(null)
                     .canSwim(false).canDrown(false)
     );
 
     private static RegistryObject<FluidType> register(String name, FluidType.Properties properties) {
         return FLUID_TYPES.register(name, () -> new BaseFluidType(WATER_STILL_RL, WATER_FLOWING_RL, BRONZE_OVERLAY_RL,
-                0xA1975e25, new Vector3f(151f / 255f, 94f / 255f, 37f / 255f), properties));
+                0xffffffff, new Vector3f(151f / 255f, 94f / 255f, 37f / 255f), properties));
     }
 
     public static void register(IEventBus eventBus) {

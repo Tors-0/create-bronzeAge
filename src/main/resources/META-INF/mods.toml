@@ -56,12 +56,12 @@ A precise mechanical expansion of the Create mod
     ordering="NONE"
     # Side this dependency is applied on - BOTH, CLIENT or SERVER
     side="BOTH"
-#[[dependencies.bronze_age]]
-#    modId="create"
-#    mandatory=true
-#    versionRange="[0.5.1,)"
-#    ordering="AFTER"
-#    side="BOTH"
+[[dependencies.bronze_age]]
+    modId="create"
+    mandatory=true
+    versionRange="[0.5.1,)"
+    ordering="AFTER"
+    side="BOTH"
 # Here's another dependency
 [[dependencies.bronze_age]]
     modId="minecraft"
