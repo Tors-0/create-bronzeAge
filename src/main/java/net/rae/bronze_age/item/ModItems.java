@@ -12,7 +12,7 @@ import net.rae.bronze_age.fluid.ModFluids;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, net.rae.bronze_age.BronzeAge.MOD_ID);
-
+    // bronze items here
     public static final RegistryObject<Item> BRONZE_INGOT = ITEMS.register("bronze_ingot",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
     public static final RegistryObject<Item> BRONZE_PLATE = ITEMS.register("bronze_plate",
@@ -23,6 +23,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
     public static final RegistryObject<Item> BRONZE_NUGGET = ITEMS.register("bronze_nugget",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
+    // tin items here
     public static final RegistryObject<Item> TIN_INGOT = ITEMS.register("tin_ingot",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
     public static final RegistryObject<Item> TIN_NUGGET = ITEMS.register("tin_nugget",
@@ -30,6 +31,15 @@ public class ModItems {
     public static final RegistryObject<Item> RAW_TIN = ITEMS.register("raw_tin",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
 
+    // bronze casting items here
+    public static final RegistryObject<Item> SMALL_SAND_CAST = ITEMS.register("small_sand_cast",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
+    public static final RegistryObject<Item> LARGE_SAND_CAST = ITEMS.register("large_sand_cast",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
+    public static final RegistryObject<Item> SMALL_COG_ASSEMBLY = ITEMS.register("small_cog_assembly",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
+    public static final RegistryObject<Item> LARGE_COG_ASSEMBLY = ITEMS.register("large_cog_assembly",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
     public static final RegistryObject<Item> MOLTEN_BRONZE_BUCKET = ITEMS.register("molten_bronze_bucket",
             () -> new BucketItem(ModFluids.SOURCE_MOLTEN_BRONZE,
                     new Item.Properties().tab(ModCreativeModeTab.COOL_TAB).craftRemainder(Items.BUCKET).stacksTo(1)));

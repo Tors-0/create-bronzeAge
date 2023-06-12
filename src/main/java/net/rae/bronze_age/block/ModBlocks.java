@@ -47,6 +47,8 @@ public class ModBlocks {
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.METAL)
                     .requiresCorrectToolForDrops().explosionResistance(6).strength(4),
                     UniformInt.of(3,7)), ModCreativeModeTab.COOL_TAB);
+    public static final RegistryObject<Block> WET_SAND = registerBlock("wet_sand",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SAND)), ModCreativeModeTab.COOL_TAB);
     public static final RegistryObject<LiquidBlock> MOLTEN_BRONZE_BLOCK = BLOCKS.register("molten_bronze_block",
             () -> new LiquidBlock(ModFluids.SOURCE_MOLTEN_BRONZE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
 
