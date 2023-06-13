@@ -1,6 +1,6 @@
 package net.rae.bronze_age.block;
 
-import static com.simibubi.create.Create.REGISTRATE;
+import static net.rae.bronze_age.BronzeAge.REGISTRATE;
 import static com.simibubi.create.foundation.data.TagGen.pickaxeOnly;
 import static com.simibubi.create.AllInteractionBehaviours.interactionBehaviour;
 import static com.simibubi.create.AllMovementBehaviours.movementBehaviour;

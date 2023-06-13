@@ -3,6 +3,7 @@ package net.rae.bronze_age;
 // https://www.youtube.com/playlist?list=PLKGarocXCE1HrC60yuTNTGRoZc6hf5Uvl
 
 import com.mojang.logging.LogUtils;
+import com.simibubi.create.foundation.data.CreateRegistrate;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraftforge.api.distmarker.Dist;
@@ -16,6 +17,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.rae.bronze_age.block.ModBlocks;
 import net.rae.bronze_age.fluid.ModFluidTypes;
 import net.rae.bronze_age.fluid.ModFluids;
+import net.rae.bronze_age.item.ModCreativeModeTab;
 import net.rae.bronze_age.item.ModItems;
 import net.rae.bronze_age.world.feature.ModConfiguredFeatures;
 import net.rae.bronze_age.world.feature.ModPlacedFeatures;
@@ -28,6 +30,9 @@ public class BronzeAge {
     public static final String MOD_ID = "bronze_age";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
+
+    public static final CreateRegistrate REGISTRATE = CreateRegistrate.create(MOD_ID);
+
     public BronzeAge() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
