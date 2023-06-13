@@ -7,6 +7,9 @@ This mod is an addon to the create mod for 1.19, it aims to expand the create mo
 ## Authors
 - Raeeeee
 - JankyMuffinz
+- DatCoder464
 ## Artists
 - Raeeeee
 - Spyril4132
+- 506F7461746F5F436F77626F79
+- SscsreamM
