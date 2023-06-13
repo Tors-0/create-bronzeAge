@@ -36,9 +36,9 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
     public static final RegistryObject<Item> LARGE_SAND_CAST = ITEMS.register("large_sand_cast",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
-    public static final RegistryObject<Item> SMALL_COG_ASSEMBLY = ITEMS.register("small_cog_assembly",
+    public static final RegistryObject<Item> SMALL_BRONZE_COG_ASSEMBLY = ITEMS.register("small_bronze_cog_assembly",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
-    public static final RegistryObject<Item> LARGE_COG_ASSEMBLY = ITEMS.register("large_cog_assembly",
+    public static final RegistryObject<Item> LARGE_BRONZE_COG_ASSEMBLY = ITEMS.register("large_bronze_cog_assembly",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
     public static final RegistryObject<Item> MOLTEN_BRONZE_BUCKET = ITEMS.register("molten_bronze_bucket",
             () -> new BucketItem(ModFluids.SOURCE_MOLTEN_BRONZE,
