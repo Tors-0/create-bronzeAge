@@ -1,13 +1,31 @@
 package net.rae.bronze_age.block;
 
+import static net.rae.bronze_age.BronzeAge.REGISTRATE;
+import static com.simibubi.create.foundation.data.TagGen.pickaxeOnly;
+import static com.simibubi.create.AllInteractionBehaviours.interactionBehaviour;
+import static com.simibubi.create.AllMovementBehaviours.movementBehaviour;
+import static com.simibubi.create.foundation.data.BlockStateGen.axisBlock;
+
+import com.mojang.datafixers.types.templates.Tag;
+import com.simibubi.create.AllBlocks;
+import com.simibubi.create.AllSpriteShifts;
+import com.simibubi.create.content.decoration.encasing.EncasingRegistry;
 import com.simibubi.create.content.kinetics.BlockStressDefaults;
 import com.simibubi.create.content.kinetics.simpleRelays.BracketedKineticBlockModel;
 import com.simibubi.create.content.kinetics.simpleRelays.CogWheelBlock;
 import com.simibubi.create.content.kinetics.simpleRelays.CogwheelBlockItem;
+import com.simibubi.create.content.kinetics.simpleRelays.encased.EncasedCogCTBehaviour;
+import com.simibubi.create.content.kinetics.simpleRelays.encased.EncasedCogwheelBlock;
 import com.simibubi.create.foundation.data.BlockStateGen;
+import com.simibubi.create.foundation.data.BuilderTransformers;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.simibubi.create.foundation.data.SharedProperties;
+import com.simibubi.create.foundation.utility.Couple;
+import com.tterrag.registrate.Registrate;
 import com.tterrag.registrate.util.entry.BlockEntry;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.TagKey;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -20,21 +38,20 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.rae.bronze_age.BronzeAge;
 import net.rae.bronze_age.fluid.ModFluids;
 import net.rae.bronze_age.item.ModCreativeModeTab;
 import net.rae.bronze_age.item.ModItems;
 
 import java.util.function.Supplier;
 
-import static com.simibubi.create.Create.REGISTRATE;
-import static com.simibubi.create.foundation.data.TagGen.pickaxeOnly;
-
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, net.rae.bronze_age.BronzeAge.MOD_ID);
 
     // FUNKY BLOCKS
-    public static final BlockEntry<CogWheelBlock> BRONZE_COGWHEEL = REGISTRATE.block("bronze_cogwheel", CogWheelBlock::small)
+    public static final BlockEntry<CogWheelBlock> BRONZE_COGWHEEL =
+            REGISTRATE.block("bronze_cogwheel", CogWheelBlock::small)
             .initialProperties(SharedProperties::stone)
             .properties(p -> p.sound(SoundType.METAL))
             .properties(p -> p.color(MaterialColor.METAL))
