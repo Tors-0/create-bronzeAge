@@ -50,7 +50,8 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, net.rae.bronze_age.BronzeAge.MOD_ID);
 
     // FUNKY BLOCKS
-    public static final BlockEntry<CogWheelBlock> BRONZE_COGWHEEL = REGISTRATE.block("bronze_cogwheel", CogWheelBlock::small)
+    public static final BlockEntry<CogWheelBlock> BRONZE_COGWHEEL =
+            REGISTRATE.block("bronze_cogwheel", CogWheelBlock::small)
             .initialProperties(SharedProperties::stone)
             .properties(p -> p.sound(SoundType.METAL))
             .properties(p -> p.color(MaterialColor.METAL))
