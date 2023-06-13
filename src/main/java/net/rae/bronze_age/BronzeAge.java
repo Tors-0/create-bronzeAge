@@ -17,7 +17,6 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.rae.bronze_age.block.ModBlocks;
 import net.rae.bronze_age.fluid.ModFluidTypes;
 import net.rae.bronze_age.fluid.ModFluids;
-import net.rae.bronze_age.item.ModCreativeModeTab;
 import net.rae.bronze_age.item.ModItems;
 import net.rae.bronze_age.world.feature.ModConfiguredFeatures;
 import net.rae.bronze_age.world.feature.ModPlacedFeatures;
@@ -38,6 +37,8 @@ public class BronzeAge {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        REGISTRATE.registerEventListeners(modEventBus);
 
         ModConfiguredFeatures.register(modEventBus);
         ModPlacedFeatures.register(modEventBus);
