@@ -1,5 +1,6 @@
 package net.rae.bronze_age.block;
 
+import com.simibubi.create.Create;
 import com.simibubi.create.content.kinetics.BlockStressDefaults;
 import com.simibubi.create.content.kinetics.simpleRelays.BracketedKineticBlockModel;
 import com.simibubi.create.content.kinetics.simpleRelays.CogWheelBlock;
@@ -8,6 +9,7 @@ import com.simibubi.create.foundation.data.BlockStateGen;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.simibubi.create.foundation.data.SharedProperties;
 import com.tterrag.registrate.util.entry.BlockEntry;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -16,6 +18,7 @@ import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.MaterialColor;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -26,7 +29,9 @@ import net.rae.bronze_age.item.ModItems;
 
 import java.util.function.Supplier;
 
+import static com.simibubi.create.foundation.data.BlockStateGen.simpleCubeAll;
 import static com.simibubi.create.foundation.data.TagGen.pickaxeOnly;
+import static com.simibubi.create.foundation.data.TagGen.tagBlockAndItem;
 import static net.rae.bronze_age.BronzeAge.REGISTRATE;
 
 public class ModBlocks {
@@ -61,6 +66,15 @@ public class ModBlocks {
                     .item(CogwheelBlockItem::new)
                     .build()
                     .register();
+    public static final BlockEntry<Block> BASALT_PEBBLES = REGISTRATE.block("basalt_pebbles", Block::new)
+            .initialProperties(() -> Blocks.GRAVEL)
+            .properties(p -> p.color(MaterialColor.COLOR_BLACK))
+            .blockstate(simpleCubeAll("basalt_pebbles"))
+            .tag(BlockTags.MINEABLE_WITH_SHOVEL)
+            .lang("Basalt Pebbles")
+            .item(BlockItem::new)
+            .build()
+            .register();
     // BLOCKS
     public static final RegistryObject<Block> TIN_BLOCK = registerBlock("tin_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
