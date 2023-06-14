@@ -1,5 +1,6 @@
 {
 	"credit": "Made with Blockbench",
+	"parent": "create:block/large_wheels",
 	"texture_size": [128, 128],
 	"textures": {
 		"0": "bronze_age:block/large_bronze_cogwheel",

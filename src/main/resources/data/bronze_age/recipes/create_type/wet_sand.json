@@ -1,11 +1,12 @@
 {
-  "type": "create:item_application",
+  "type": "create:mixing",
   "ingredients": [
     {
       "item": "minecraft:sand"
     },
     {
-      "item": "minecraft:water_bottle"
+      "amount": 250,
+      "fluid": "minecraft:water"
     }
   ],
   "results": [

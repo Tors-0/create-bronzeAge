@@ -3,7 +3,8 @@
 	"parent": "create:block/large_wheels",
 	"texture_size": [32, 32],
 	"textures": {
-		"1_2": "bronze_age:block/bronze_cogwheel"
+		"1_2": "bronze_age:block/bronze_cogwheel",
+		"particle": "bronze_age:block/bronze_cogwheel"
 	},
 	"elements": [
 		{
