@@ -1,0 +1,14 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "bronze_age:basalt_pebbles"
+    }
+  ],
+  "results": [
+    {
+      "chance": 0.0625,
+      "item": "bronze_age:tin_nugget"
+    }
+  ]
+}

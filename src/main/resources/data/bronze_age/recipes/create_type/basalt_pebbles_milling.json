@@ -1,0 +1,14 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "minecraft:basalt"
+    }
+  ],
+  "processingTime": 250,
+  "results": [
+    {
+      "item": "bronze_age:basalt_pebbles"
+    }
+  ]
+}
