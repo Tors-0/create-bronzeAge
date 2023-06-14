@@ -4,8 +4,6 @@
   "item.bronze_age.tin_ingot": "Tin Ingot",
   "item.bronze_age.raw_tin": "Raw Tin",
   "item.bronze_age.tin_nugget": "Tin Nugget",
-  "item.bronze_age.bronze_gear": "Bronze Gear",
-  "item.bronze_age.small_bronze_gear": "Small Bronze Gear",
   "item.bronze_age.bronze_plate": "Bronze Sheet",
   "item.bronze_age.molten_bronze_bucket": "Molten Bronze Bucket",
 
@@ -14,8 +12,8 @@
 
   "block.bronze_age.bronze_cogwheel": "Bronze Cogwheel",
   "block.bronze_age.large_bronze_cogwheel": "Large Bronze Cogwheel",
-  "item.bronze_age.large_bronze_cog_assembly": "Large Bronze Cogwheel Assembly",
-  "item.bronze_age.small_bronze_cog_assembly": "Small Bronze Cogwheel Assembly",
+  "item.bronze_age.large_bronze_gear": "Large Bronze Gear",
+  "item.bronze_age.bronze_gear": "Bronze Gear",
 
   "item.bronze_age.bronze_gladius": "Bronze Gladius",
   "item.bronze_age.bronze_axe": "Bronze Axe",

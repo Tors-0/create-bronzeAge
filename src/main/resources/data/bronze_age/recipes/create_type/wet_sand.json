@@ -1,0 +1,16 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "item": "minecraft:sand"
+    },
+    {
+      "item": "minecraft:water_bottle"
+    }
+  ],
+  "results": [
+    {
+      "item": "bronze_age:wet_sand"
+    }
+  ]
+}

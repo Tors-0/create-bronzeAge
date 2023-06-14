@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "bronze_age:small_sand_cast"
+    },
+    {
+      "amount": 135,
+      "fluid": "bronze_age:molten_bronze_fluid"
+    }
+  ],
+  "results": [
+    {
+      "item": "bronze_age:bronze_gear"
+    }
+  ]
+}

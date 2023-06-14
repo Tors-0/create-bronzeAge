@@ -30,6 +30,9 @@ import static com.simibubi.create.foundation.data.TagGen.pickaxeOnly;
 import static net.rae.bronze_age.BronzeAge.REGISTRATE;
 
 public class ModBlocks {
+    static {
+        REGISTRATE.creativeModeTab(() -> ModCreativeModeTab.COOL_TAB);
+    }
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, net.rae.bronze_age.BronzeAge.MOD_ID);
 

@@ -17,10 +17,10 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
     public static final RegistryObject<Item> BRONZE_PLATE = ITEMS.register("bronze_plate",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
-    public static final RegistryObject<Item> BRONZE_GEAR = ITEMS.register("bronze_gear",
+    /*public static final RegistryObject<Item> BRONZE_GEAR = ITEMS.register("bronze_gear",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
     public static final RegistryObject<Item> SMALL_BRONZE_GEAR = ITEMS.register("small_bronze_gear",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));*/
     public static final RegistryObject<Item> BRONZE_NUGGET = ITEMS.register("bronze_nugget",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
     // tin items here
@@ -36,9 +36,9 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
     public static final RegistryObject<Item> LARGE_SAND_CAST = ITEMS.register("large_sand_cast",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
-    public static final RegistryObject<Item> SMALL_BRONZE_COG_ASSEMBLY = ITEMS.register("small_bronze_cog_assembly",
+    public static final RegistryObject<Item> SMALL_BRONZE_COG_ASSEMBLY = ITEMS.register("bronze_gear",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
-    public static final RegistryObject<Item> LARGE_BRONZE_COG_ASSEMBLY = ITEMS.register("large_bronze_cog_assembly",
+    public static final RegistryObject<Item> LARGE_BRONZE_COG_ASSEMBLY = ITEMS.register("large_bronze_gear",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
     public static final RegistryObject<Item> MOLTEN_BRONZE_BUCKET = ITEMS.register("molten_bronze_bucket",
             () -> new BucketItem(ModFluids.SOURCE_MOLTEN_BRONZE,

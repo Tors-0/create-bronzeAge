@@ -1,0 +1,17 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "bronze_age:wet_sand"
+    },
+    {
+      "item": "create:large_cogwheel"
+    }
+  ],
+  "keepHeldItem": true,
+  "results": [
+    {
+      "item": "bronze_age:large_sand_cast"
+    }
+  ]
+}

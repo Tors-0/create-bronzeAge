@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "bronze_age:large_bronze_gear"
+    },
+    {
+      "item": "create:shaft"
+    }
+  ],
+  "results": [
+    {
+      "item": "bronze_age:large_bronze_cogwheel"
+    }
+  ]
+}
