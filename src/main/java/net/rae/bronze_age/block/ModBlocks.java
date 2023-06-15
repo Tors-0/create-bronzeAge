@@ -48,7 +48,8 @@ public class ModBlocks {
                     .properties(p -> p.sound(SoundType.METAL))
                     .properties(p -> p.color(MaterialColor.METAL))
                     .transform(BlockStressDefaults.setNoImpact())
-                    .transform(pickaxeOnly()).blockstate(BlockStateGen.axisBlockProvider(false))
+                    .transform(pickaxeOnly())
+                    .blockstate(BlockStateGen.axisBlockProvider(false))
                     .onRegister(CreateRegistrate.blockModel(() -> BracketedKineticBlockModel::new))
                     .item(CogwheelBlockItem::new)
                     .build()
@@ -61,6 +62,7 @@ public class ModBlocks {
                     .transform(BlockStressDefaults.setNoImpact())
                     .transform(pickaxeOnly())
                     .blockstate(BlockStateGen.axisBlockProvider(false))
+                    .onRegister(CreateRegistrate.blockModel(() -> BracketedKineticBlockModel::new))
                     .item(CogwheelBlockItem::new)
                     .build()
                     .register();
