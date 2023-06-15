@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "bronze_age:wet_sand"
+    "bronze_age:wet_sand",
+    "bronze_age:basalt_pebbles"
   ]
 }

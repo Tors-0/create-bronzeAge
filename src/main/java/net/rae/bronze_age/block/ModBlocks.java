@@ -66,7 +66,7 @@ public class ModBlocks {
                     .item(CogwheelBlockItem::new)
                     .build()
                     .register();
-    public static final BlockEntry<Block> BASALT_PEBBLES = REGISTRATE.block("basalt_pebbles", Block::new)
+    public static final BlockEntry<GravelBlock> BASALT_PEBBLES = REGISTRATE.block("basalt_pebbles", GravelBlock::new)
             .initialProperties(() -> Blocks.GRAVEL)
             .properties(p -> p.color(MaterialColor.COLOR_BLACK))
             .blockstate(simpleCubeAll("basalt_pebbles"))
