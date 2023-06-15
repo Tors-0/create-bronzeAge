@@ -43,26 +43,24 @@ public class ModBlocks {
 
     // FUNKY BLOCKS
     public static final BlockEntry<CogWheelBlock> BRONZE_COGWHEEL =
-            REGISTRATE.block("bronze_cogwheel", CogWheelBlock::small)
-            .initialProperties(SharedProperties::stone)
-            .properties(p -> p.sound(SoundType.METAL))
-            .properties(p -> p.color(MaterialColor.METAL))
-            .transform(BlockStressDefaults.setNoImpact())
-            .transform(pickaxeOnly())
-            .blockstate(BlockStateGen.axisBlockProvider(false))
-            .onRegister(CreateRegistrate.blockModel(() -> BracketedKineticBlockModel::new))
-            .item(CogwheelBlockItem::new)
-            .build()
-            .register();
-    public static final BlockEntry<CogWheelBlock> LARGE_BRONZE_COGWHEEL =
-            REGISTRATE.block("large_bronze_cogwheel", CogWheelBlock::large)
+            REGISTRATE.block("bronze_cogwheel", BronzeCogwheelBlock::small)
                     .initialProperties(SharedProperties::stone)
                     .properties(p -> p.sound(SoundType.METAL))
                     .properties(p -> p.color(MaterialColor.METAL))
-                    .transform(pickaxeOnly())
                     .transform(BlockStressDefaults.setNoImpact())
-                    .blockstate(BlockStateGen.axisBlockProvider(false))
+                    .transform(pickaxeOnly()).blockstate(BlockStateGen.axisBlockProvider(false))
                     .onRegister(CreateRegistrate.blockModel(() -> BracketedKineticBlockModel::new))
+                    .item(CogwheelBlockItem::new)
+                    .build()
+                    .register();
+    public static final BlockEntry<CogWheelBlock> LARGE_BRONZE_COGWHEEL =
+            REGISTRATE.block("large_bronze_cogwheel", BronzeCogwheelBlock::large)
+                    .initialProperties(SharedProperties::stone)
+                    .properties(p -> p.sound(SoundType.METAL))
+                    .properties(p -> p.color(MaterialColor.METAL))
+                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(pickaxeOnly())
+                    .blockstate(BlockStateGen.axisBlockProvider(false))
                     .item(CogwheelBlockItem::new)
                     .build()
                     .register();

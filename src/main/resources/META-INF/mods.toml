@@ -60,7 +60,7 @@ A precise mechanical expansion of the Create mod
     modId="create"
     mandatory=true
     versionRange="[0.5.1.b,)"
-    ordering="BEFORE"
+    ordering="AFTER"
     side="BOTH"
 # Here's another dependency
 [[dependencies.bronze_age]]

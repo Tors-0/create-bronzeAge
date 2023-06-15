@@ -3,10 +3,10 @@
 	"parent": "create:block/large_wheels",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "create:block/cogwheel_axis",
-		"3": "create:block/axis_top",
 		"4": "bronze_age:block/large_bronze_cogwheel",
-		"particle": "bronze_age:block/large_bronze_cogwheel"
+		"particle": "bronze_age:block/large_bronze_cogwheel",
+		"0": "create:block/cogwheel_axis",
+		"3": "create:block/axis_top"
 	},
 	"elements": [
 		{

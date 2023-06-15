@@ -15,6 +15,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.rae.bronze_age.block.ModBlocks;
+import net.rae.bronze_age.block_entity.ModBlockEntityType;
 import net.rae.bronze_age.fluid.ModFluidTypes;
 import net.rae.bronze_age.fluid.ModFluids;
 import net.rae.bronze_age.item.ModItems;
@@ -36,6 +37,7 @@ public class BronzeAge {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlockEntityType.register();
         ModBlocks.register(modEventBus);
 
         REGISTRATE.registerEventListeners(modEventBus);
