@@ -1,11 +1,15 @@
 package net.rae.bronze_age.block;
 
+import com.simibubi.create.AllBlocks;
+import com.simibubi.create.AllSpriteShifts;
 import com.simibubi.create.Create;
+import com.simibubi.create.content.decoration.encasing.CasingBlock;
 import com.simibubi.create.content.kinetics.BlockStressDefaults;
 import com.simibubi.create.content.kinetics.simpleRelays.BracketedKineticBlockModel;
 import com.simibubi.create.content.kinetics.simpleRelays.CogWheelBlock;
 import com.simibubi.create.content.kinetics.simpleRelays.CogwheelBlockItem;
 import com.simibubi.create.foundation.data.BlockStateGen;
+import com.simibubi.create.foundation.data.BuilderTransformers;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.simibubi.create.foundation.data.SharedProperties;
 import com.tterrag.registrate.util.entry.BlockEntry;
@@ -23,6 +27,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.rae.bronze_age.ModSpriteShifts;
 import net.rae.bronze_age.fluid.ModFluids;
 import net.rae.bronze_age.item.ModCreativeModeTab;
 import net.rae.bronze_age.item.ModItems;
@@ -74,6 +79,10 @@ public class ModBlocks {
             .lang("Basalt Pebbles")
             .item(BlockItem::new)
             .build()
+            .register();
+    public static final BlockEntry<CasingBlock> BRONZE_CASING = REGISTRATE.block("bronze_casing", CasingBlock::new)
+            .properties(p -> p.color(MaterialColor.TERRACOTTA_BROWN))
+            .transform(BuilderTransformers.casing(() -> ModSpriteShifts.BRONZE_CASING))
             .register();
     // BLOCKS
     public static final RegistryObject<Block> TIN_BLOCK = registerBlock("tin_block",

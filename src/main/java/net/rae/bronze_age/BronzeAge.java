@@ -6,6 +6,7 @@ import com.mojang.logging.LogUtils;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -65,5 +66,8 @@ public class BronzeAge {
             ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_MOLTEN_BRONZE.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_MOLTEN_BRONZE.get(), RenderType.translucent());
         }
+    }
+    public static ResourceLocation asResource(String path) {
+        return new ResourceLocation(MOD_ID, path);
     }
 }
