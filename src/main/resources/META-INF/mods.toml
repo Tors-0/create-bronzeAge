@@ -45,16 +45,16 @@ description='''
 A precise mechanical expansion of the Create mod
 
 ## Authors
-- Raeeeee
-- JankyMuffinz
 - DatCoder464
-## Artists
+- JankyMuffinz
 - Raeeeee
-- Spyril4132
+## Artists
 - 506F7461746F5F436F77626F79
 - Brank
-- SscreamMOrSmg6
 - JankyMuffinz
+- Raeeeee
+- Spyril4132
+- SscreamMOrSmg6
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.bronze_age]] #optional
