@@ -1,15 +1,22 @@
-// 1.19.2	2023-06-15T15:36:53.419414135	Registrate Provider for bronze_age [Recipes, Advancements, Loot tables, Tags (blocks), Tags (items), Tags (fluids), Tags (entity_types), Blockstates, Item models, Lang (en_us/en_ud)]
+// 1.19.2	2023-06-18T19:21:37.078664109	Registrate Provider for bronze_age [Recipes, Advancements, Loot tables, Tags (blocks), Tags (items), Tags (fluids), Tags (entity_types), Blockstates, Item models, Lang (en_us/en_ud)]
 9544cb079ad6e4da06901b78d04b13e5eee6a731 assets/bronze_age/blockstates/basalt_pebbles.json
+f244bbbc247e1d1b294687252d2630acbb801345 assets/bronze_age/blockstates/bronze_casing.json
 09ea2af8d2e13afab367c8020a3df446072e4b81 assets/bronze_age/blockstates/bronze_cogwheel.json
 dca6e6edba499a3fe04ad7e8671582e2fe52475f assets/bronze_age/blockstates/large_bronze_cogwheel.json
-f1aa7a9dc800bd1fecb6e5e33fed6780d5a6f503 assets/bronze_age/lang/en_ud.json
-2c8900557fc9adfc9db16bdb78c6e02140bb4a4a assets/bronze_age/lang/en_us.json
+593c9fea14d0bb77e40d6a5d872728773b288828 assets/bronze_age/lang/en_ud.json
+926b715917ae11991e15bfecd42d36e8f50f58ca assets/bronze_age/lang/en_us.json
 0706723402bcd86f9271017a7fa6df1ba783766e assets/bronze_age/models/block/basalt_pebbles.json
+553a20ef810cb631b5251bbcb7d16830faa63936 assets/bronze_age/models/block/bronze_casing.json
 aefffde11ef362a42341f206b12aaab41e5f8f95 assets/bronze_age/models/item/basalt_pebbles.json
+af5c0a0420e38a09b55282662143e1c001613d10 assets/bronze_age/models/item/bronze_casing.json
 5e39251e4facca98d5fbe8c86bb897cece08676b assets/bronze_age/models/item/bronze_cogwheel.json
 0728b7625976ab84429098b59def4485febc1804 assets/bronze_age/models/item/large_bronze_cogwheel.json
 a8e78d977132b2b2e4c6288760001e3327460f90 data/bronze_age/loot_tables/blocks/basalt_pebbles.json
+b7a40960f62c15271a8b89279ed85f76094f2796 data/bronze_age/loot_tables/blocks/bronze_casing.json
 e515e4085dcd6cb0f1b47567cdd8c797ba4673a9 data/bronze_age/loot_tables/blocks/bronze_cogwheel.json
 82dca05ccbfac6cc648523eba1f4d172e4bec48d data/bronze_age/loot_tables/blocks/large_bronze_cogwheel.json
-6052630d2e13a9323c8130aad4c85268f9b58dee data/minecraft/tags/blocks/mineable/pickaxe.json
+31084e122701c512850c35229e6de5ffcab4459a data/create/tags/blocks/casing.json
+31084e122701c512850c35229e6de5ffcab4459a data/create/tags/items/casing.json
+31084e122701c512850c35229e6de5ffcab4459a data/minecraft/tags/blocks/mineable/axe.json
+8ffceecf7d06469da7032c713f5af52f777439e6 data/minecraft/tags/blocks/mineable/pickaxe.json
 f80a23585b2def10103810169067eb1b52409f10 data/minecraft/tags/blocks/mineable/shovel.json

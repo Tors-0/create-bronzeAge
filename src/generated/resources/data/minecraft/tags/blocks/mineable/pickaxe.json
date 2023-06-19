@@ -1,6 +1,8 @@
 {
-  "replace": false,
   "values": [
+    "bronze_age:bronze_cogwheel",
+    "bronze_age:large_bronze_cogwheel",
+    "bronze_age:bronze_casing",
     "#bronze_age:tin_ores",
     "bronze_age:tin_block",
     "bronze_age:bronze_block",
