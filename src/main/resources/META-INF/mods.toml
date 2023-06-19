@@ -27,9 +27,9 @@ displayName="Create: Bronze Age" #mandatory
 # A URL for the "homepage" for this mod, displayed in the mod UI
 #displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
 # A file name (in the root of the mod JAR) containing a logo for display
-logoFile="logo.png" #optional
+logoFile="bronze-age-logo.png" #optional
 # A text field displayed in the mod UI
-credits="Artwork partially by Spyril4132" #optional
+credits="" #optional
 # A text field displayed in the mod UI
 authors="Raeeeee" #optional
 # Display Test controls the display for your mod in the server connection screen
@@ -43,6 +43,18 @@ authors="Raeeeee" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
 A precise mechanical expansion of the Create mod
+
+## Authors
+- Raeeeee
+- JankyMuffinz
+- DatCoder464
+## Artists
+- Raeeeee
+- Spyril4132
+- 506F7461746F5F436F77626F79
+- Brank
+- SscsreamM
+- JankyMuffinz
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.bronze_age]] #optional
