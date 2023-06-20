@@ -34,5 +34,7 @@ public class ModFluidTypes {
                 0xffffffff, new Vector3f(151f / 255f, 94f / 255f, 37f / 255f), properties));
     }
 
-    public static void register() {}
+    public static void register(IEventBus eventBus) {
+        FLUID_TYPES.register(eventBus);
+    }
 }

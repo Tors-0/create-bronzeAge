@@ -9,7 +9,7 @@ public class ModCreativeModeTab {
     public static final CreativeModeTab COOL_TAB = new CreativeModeTab("cooltab") {
         @Override
         public @NotNull ItemStack makeIcon() {
-            return new ItemStack(ModBlocks.BRONZE_BLOCK.get());
+            return new ItemStack(ModBlocks.BRONZE_COGWHEEL.get());
         }
     };
 }

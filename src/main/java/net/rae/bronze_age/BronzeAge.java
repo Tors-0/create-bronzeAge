@@ -8,10 +8,12 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.rae.bronze_age.registry.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,18 +27,19 @@ public class BronzeAge {
     public static final String NAME = "Bronze age";
     public static final Logger LOGGER = LoggerFactory.getLogger(NAME);
 
-    public static final CreateRegistrate REGISTRATE = CreateRegistrate.create(MOD_ID);
+    public static final CreateRegistrate REGISTRATE = ModRegistrate.REGISTRATE;
 
     public BronzeAge() {
+        IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         AllModItems.register();
         ModBlockEntityType.register();
-        ModBlocks.register();
-        ModConfiguredFeatures.register();
-        ModFluids.register();
-        ModFluidTypes.register();
-        ModItems.register();
-        ModPlacedFeatures.register();
+        ModBlocks.register(modEventBus);
+        ModConfiguredFeatures.register(modEventBus);
+        ModFluids.register(modEventBus);
+        ModFluidTypes.register(modEventBus);
+        ModItems.register(modEventBus);
+        ModPlacedFeatures.register(modEventBus);
 
 
 

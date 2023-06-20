@@ -5,7 +5,7 @@ import com.simibubi.create.content.kinetics.simpleRelays.BracketedKineticBlockEn
 import com.simibubi.create.content.kinetics.simpleRelays.BracketedKineticBlockEntityRenderer;
 import com.tterrag.registrate.util.entry.BlockEntityEntry;
 
-import static net.rae.bronze_age.registry.ModRegistrate.REGISTRATE;
+import static net.rae.bronze_age.BronzeAge.REGISTRATE;
 
 
 public class ModBlockEntityType {

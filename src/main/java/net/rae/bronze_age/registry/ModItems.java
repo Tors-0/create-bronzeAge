@@ -2,6 +2,7 @@ package net.rae.bronze_age.registry;
 
 
 import net.minecraft.world.item.*;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -57,5 +58,7 @@ public class ModItems {
         return new Item.Properties().tab(ModCreativeModeTab.COOL_TAB);
     }
 
-    public static void register() {}
+    public static void register(IEventBus eventBus) {
+        ITEMS.register(eventBus);
+    }
 }
