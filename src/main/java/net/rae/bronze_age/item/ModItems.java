@@ -8,12 +8,13 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.rae.bronze_age.ModTiers;
 import net.rae.bronze_age.fluid.ModFluids;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, net.rae.bronze_age.BronzeAge.MOD_ID);
     // bronze items here
-    public static final RegistryObject<Item> BRONZE_INGOT = ITEMS.register("bronze_ingot",
+    public static final RegistryObject<Item> BRONZE_INGOT = ITEMS.register("bronze_ingot", // registered
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
     public static final RegistryObject<Item> BRONZE_PLATE = ITEMS.register("bronze_plate",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
@@ -21,14 +22,14 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
     public static final RegistryObject<Item> SMALL_BRONZE_GEAR = ITEMS.register("small_bronze_gear",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));*/
-    public static final RegistryObject<Item> BRONZE_NUGGET = ITEMS.register("bronze_nugget",
+    public static final RegistryObject<Item> BRONZE_NUGGET = ITEMS.register("bronze_nugget", // registered
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
     // tin items here
-    public static final RegistryObject<Item> TIN_INGOT = ITEMS.register("tin_ingot",
+    public static final RegistryObject<Item> TIN_INGOT = ITEMS.register("tin_ingot", // registered
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
-    public static final RegistryObject<Item> TIN_NUGGET = ITEMS.register("tin_nugget",
+    public static final RegistryObject<Item> TIN_NUGGET = ITEMS.register("tin_nugget", // registered
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
-    public static final RegistryObject<Item> RAW_TIN = ITEMS.register("raw_tin",
+    public static final RegistryObject<Item> RAW_TIN = ITEMS.register("raw_tin", // registered
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
 
     // bronze casting items here
@@ -45,17 +46,17 @@ public class ModItems {
                     new Item.Properties().tab(ModCreativeModeTab.COOL_TAB).craftRemainder(Items.BUCKET).stacksTo(1)));
 
     public static final RegistryObject<SwordItem> BRONZE_GLADIUS = ITEMS.register("bronze_gladius",
-            () -> new SwordItem(Tiers.BRONZE,3,-2.4f, props()));
+            () -> new SwordItem(ModTiers.BRONZE,3,-2.4f, props()));
     public static final RegistryObject<PickaxeItem> BRONZE_PICKAXE = ITEMS.register("bronze_pickaxe",
-            () -> new PickaxeItem(Tiers.BRONZE, 1, -2.8f, props()));
+            () -> new PickaxeItem(ModTiers.BRONZE, 1, -2.8f, props()));
     public static final RegistryObject<ShovelItem> BRONZE_SHOVEL = ITEMS.register("bronze_shovel",
-            () -> new ShovelItem(Tiers.BRONZE,1.5f,-3.0f, props()));
+            () -> new ShovelItem(ModTiers.BRONZE,1.5f,-3.0f, props()));
     public static final RegistryObject<AxeItem> BRONZE_AXE = ITEMS.register("bronze_axe",
-            () -> new AxeItem(Tiers.BRONZE, 6.0f, -3.1f,props()));
+            () -> new AxeItem(ModTiers.BRONZE, 6.0f, -3.1f,props()));
     public static final RegistryObject<HoeItem> BRONZE_HOE = ITEMS.register("bronze_hoe",
-            () -> new HoeItem(Tiers.BRONZE, -2,-1.0f,props()));
+            () -> new HoeItem(ModTiers.BRONZE, -2,-1.0f,props()));
 
-    private static Item.Properties props() {
+    protected static Item.Properties props() {
         return new Item.Properties().tab(ModCreativeModeTab.COOL_TAB);
     }
 
@@ -64,13 +65,6 @@ public class ModItems {
     }
 
     public static class Tiers {
-        public static final Tier BRONZE = new ForgeTier(
-                2,
-                420,
-                6.5f,
-                2.0f,
-                15,
-                BlockTags.MINEABLE_WITH_PICKAXE,
-                () -> Ingredient.of(ModItems.BRONZE_INGOT.get()));
+
     }
 }
