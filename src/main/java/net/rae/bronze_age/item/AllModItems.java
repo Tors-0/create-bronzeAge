@@ -1,17 +1,14 @@
 package net.rae.bronze_age.item;
 
+import com.mojang.realmsclient.gui.screens.RealmsGenericErrorScreen;
 import com.tterrag.registrate.util.entry.ItemEntry;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.tags.TagKey;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.SwordItem;
-import net.minecraft.world.item.TridentItem;
+import net.minecraft.world.item.*;
 import net.rae.bronze_age.ModTiers;
 
 import static net.rae.bronze_age.BronzeAge.REGISTRATE;
 import static net.rae.bronze_age.ModTags.forgeItemTag;
-import static net.rae.bronze_age.item.ModItems.props;
 
 public class AllModItems {
     static {
@@ -30,13 +27,23 @@ public class AllModItems {
     public static final ItemEntry<TridentItem> BRONZE_SPEAR = REGISTRATE.item("bronze_spear",TridentItem::new)
             .register();
     public static final ItemEntry<SwordItem> BRONZE_SWORD =
-            REGISTRATE.item("bronze_sword", () -> new SwordItem(ModTiers.BRONZE,3,-2.4f,props()))
+            REGISTRATE.item("bronze_sword", p -> new SwordItem(ModTiers.BRONZE,3,-2.4f,props()))
+                    .lang("Bronze Gladius")
+                    .register();
+    public static final ItemEntry<PickaxeItem> BRONZE_PICKAXE =
+            REGISTRATE.item("bronze_pickaxe", p -> new PickaxeItem(ModTiers.BRONZE,1,-2.8f,props()))
+                    .register();
+    public static final ItemEntry<ShovelItem> BRONZE_SHOVEL =
+            REGISTRATE.item("bronze_shovel", p -> new ShovelItem(ModTiers.BRONZE,1.5f,-3.0f,props()))
                     .register();
     // Mass item methods
     private static ItemEntry<Item> taggedBasicItem(String name, TagKey<Item>... tags) {
         return REGISTRATE.item(name, Item::new)
                 .tag(tags)
                 .register();
+    }
+    private static Item.Properties props() {
+        return new Item.Properties().tab(ModCreativeModeTab.COOL_TAB);
     }
     // Load this class
     public static void register() {}

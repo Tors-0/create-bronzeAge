@@ -45,18 +45,18 @@ public class ModItems {
             () -> new BucketItem(ModFluids.SOURCE_MOLTEN_BRONZE,
                     new Item.Properties().tab(ModCreativeModeTab.COOL_TAB).craftRemainder(Items.BUCKET).stacksTo(1)));
 
-    public static final RegistryObject<SwordItem> BRONZE_GLADIUS = ITEMS.register("bronze_gladius",
+    public static final RegistryObject<SwordItem> BRONZE_GLADIUS = ITEMS.register("bronze_gladius", // registered
             () -> new SwordItem(ModTiers.BRONZE,3,-2.4f, props()));
-    public static final RegistryObject<PickaxeItem> BRONZE_PICKAXE = ITEMS.register("bronze_pickaxe",
+    public static final RegistryObject<PickaxeItem> BRONZE_PICKAXE = ITEMS.register("bronze_pickaxe", // registered
             () -> new PickaxeItem(ModTiers.BRONZE, 1, -2.8f, props()));
-    public static final RegistryObject<ShovelItem> BRONZE_SHOVEL = ITEMS.register("bronze_shovel",
+    public static final RegistryObject<ShovelItem> BRONZE_SHOVEL = ITEMS.register("bronze_shovel", // registered
             () -> new ShovelItem(ModTiers.BRONZE,1.5f,-3.0f, props()));
     public static final RegistryObject<AxeItem> BRONZE_AXE = ITEMS.register("bronze_axe",
             () -> new AxeItem(ModTiers.BRONZE, 6.0f, -3.1f,props()));
     public static final RegistryObject<HoeItem> BRONZE_HOE = ITEMS.register("bronze_hoe",
             () -> new HoeItem(ModTiers.BRONZE, -2,-1.0f,props()));
 
-    protected static Item.Properties props() {
+    private static Item.Properties props() {
         return new Item.Properties().tab(ModCreativeModeTab.COOL_TAB);
     }
 
