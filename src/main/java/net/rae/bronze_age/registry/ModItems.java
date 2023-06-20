@@ -1,15 +1,12 @@
-package net.rae.bronze_age.item;
+package net.rae.bronze_age.registry;
 
-import net.minecraft.tags.BlockTags;
+
 import net.minecraft.world.item.*;
-import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraftforge.common.ForgeTier;
-import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.rae.bronze_age.ModTiers;
-import net.rae.bronze_age.fluid.ModFluids;
+import net.rae.bronze_age.ModCreativeModeTab;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, net.rae.bronze_age.BronzeAge.MOD_ID);
@@ -56,15 +53,9 @@ public class ModItems {
     public static final RegistryObject<HoeItem> BRONZE_HOE = ITEMS.register("bronze_hoe",
             () -> new HoeItem(ModTiers.BRONZE, -2,-1.0f,props()));
 
-    protected static Item.Properties props() {
+    public static Item.Properties props() {
         return new Item.Properties().tab(ModCreativeModeTab.COOL_TAB);
     }
 
-    public static void register(IEventBus eventBus) {
-        ITEMS.register(eventBus);
-    }
-
-    public static class Tiers {
-
-    }
+    public static void register() {}
 }

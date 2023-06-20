@@ -1,4 +1,4 @@
-package net.rae.bronze_age.fluid;
+package net.rae.bronze_age.content.fluid;
 
 import com.mojang.blaze3d.shaders.FogShape;
 import com.mojang.blaze3d.systems.RenderSystem;

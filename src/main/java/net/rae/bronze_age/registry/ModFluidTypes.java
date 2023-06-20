@@ -1,4 +1,4 @@
-package net.rae.bronze_age.fluid;
+package net.rae.bronze_age.registry;
 
 import com.mojang.math.Vector3f;
 import net.minecraft.resources.ResourceLocation;
@@ -11,6 +11,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.rae.bronze_age.BronzeAge;
+import net.rae.bronze_age.content.fluid.BaseFluidType;
 
 public class ModFluidTypes {
     public static final ResourceLocation WATER_STILL_RL = new ResourceLocation(BronzeAge.MOD_ID, "block/mbronze_still");
@@ -33,7 +34,5 @@ public class ModFluidTypes {
                 0xffffffff, new Vector3f(151f / 255f, 94f / 255f, 37f / 255f), properties));
     }
 
-    public static void register(IEventBus eventBus) {
-        FLUID_TYPES.register(eventBus);
-    }
+    public static void register() {}
 }

@@ -1,9 +1,8 @@
-package net.rae.bronze_age.world.feature;
+package net.rae.bronze_age.registry;
 
 import net.minecraft.core.Registry;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.placement.*;
-import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -34,7 +33,5 @@ public class ModPlacedFeatures {
 
 
 
-    public static void register(IEventBus eventBus) {
-        PLACED_FEATURES.register(eventBus);
-    }
+    public static void register() {}
 }

@@ -4,7 +4,7 @@ import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.common.ForgeTier;
-import net.rae.bronze_age.item.ModItems;
+import net.rae.bronze_age.registry.ModItems;
 
 public class ModTiers {
     public static final Tier BRONZE = new ForgeTier(

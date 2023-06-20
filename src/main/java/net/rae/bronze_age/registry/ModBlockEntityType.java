@@ -1,12 +1,11 @@
-package net.rae.bronze_age.block_entity;
+package net.rae.bronze_age.registry;
 
 import com.simibubi.create.content.kinetics.simpleRelays.BracketedKineticBlockEntity;
 import com.simibubi.create.content.kinetics.simpleRelays.BracketedKineticBlockEntityInstance;
 import com.simibubi.create.content.kinetics.simpleRelays.BracketedKineticBlockEntityRenderer;
 import com.tterrag.registrate.util.entry.BlockEntityEntry;
-import net.rae.bronze_age.block.ModBlocks;
 
-import static net.rae.bronze_age.BronzeAge.REGISTRATE;
+import static net.rae.bronze_age.registry.ModRegistrate.REGISTRATE;
 
 
 public class ModBlockEntityType {

@@ -1,17 +1,16 @@
-package net.rae.bronze_age.item;
+package net.rae.bronze_age.registry;
 
 import com.tterrag.registrate.util.entry.ItemEntry;
-import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.TridentItem;
+import net.rae.bronze_age.ModCreativeModeTab;
 import net.rae.bronze_age.ModTiers;
 
 import static net.rae.bronze_age.BronzeAge.REGISTRATE;
 import static net.rae.bronze_age.ModTags.forgeItemTag;
-import static net.rae.bronze_age.item.ModItems.props;
+import static net.rae.bronze_age.registry.ModItems.props;
 
 public class AllModItems {
     static {
@@ -30,7 +29,7 @@ public class AllModItems {
     public static final ItemEntry<TridentItem> BRONZE_SPEAR = REGISTRATE.item("bronze_spear",TridentItem::new)
             .register();
     public static final ItemEntry<SwordItem> BRONZE_SWORD =
-            REGISTRATE.item("bronze_sword", () -> new SwordItem(ModTiers.BRONZE,3,-2.4f,props()))
+            REGISTRATE.item("bronze_sword", p -> new SwordItem(ModTiers.BRONZE,3,-2.4f,props()))
                     .register();
     // Mass item methods
     private static ItemEntry<Item> taggedBasicItem(String name, TagKey<Item>... tags) {
