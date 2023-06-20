@@ -33,18 +33,22 @@ public class BronzeAge {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         AllModItems.register();
+        ModItems.register(modEventBus);
+
         ModBlockEntityType.register();
         ModBlocks.register(modEventBus);
+
+        REGISTRATE.registerEventListeners(modEventBus);
+
         ModConfiguredFeatures.register(modEventBus);
-        ModFluids.register(modEventBus);
-        ModFluidTypes.register(modEventBus);
-        ModItems.register(modEventBus);
         ModPlacedFeatures.register(modEventBus);
 
+        ModFluids.register(modEventBus);
+        ModFluidTypes.register(modEventBus);
 
+        modEventBus.addListener(this::commonSetup);
 
-
-
+        MinecraftForge.EVENT_BUS.register(this);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {

@@ -12,23 +12,12 @@ import net.rae.bronze_age.ModCreativeModeTab;
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, net.rae.bronze_age.BronzeAge.MOD_ID);
     // bronze items here
-    public static final RegistryObject<Item> BRONZE_INGOT = ITEMS.register("bronze_ingot", // registered
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
     public static final RegistryObject<Item> BRONZE_PLATE = ITEMS.register("bronze_plate",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
     /*public static final RegistryObject<Item> BRONZE_GEAR = ITEMS.register("bronze_gear",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
     public static final RegistryObject<Item> SMALL_BRONZE_GEAR = ITEMS.register("small_bronze_gear",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));*/
-    public static final RegistryObject<Item> BRONZE_NUGGET = ITEMS.register("bronze_nugget", // registered
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
-    // tin items here
-    public static final RegistryObject<Item> TIN_INGOT = ITEMS.register("tin_ingot", // registered
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
-    public static final RegistryObject<Item> TIN_NUGGET = ITEMS.register("tin_nugget", // registered
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
-    public static final RegistryObject<Item> RAW_TIN = ITEMS.register("raw_tin", // registered
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
 
     // bronze casting items here
     public static final RegistryObject<Item> SMALL_SAND_CAST = ITEMS.register("small_sand_cast",
@@ -43,8 +32,6 @@ public class ModItems {
             () -> new BucketItem(ModFluids.SOURCE_MOLTEN_BRONZE,
                     new Item.Properties().tab(ModCreativeModeTab.COOL_TAB).craftRemainder(Items.BUCKET).stacksTo(1)));
 
-    public static final RegistryObject<SwordItem> BRONZE_GLADIUS = ITEMS.register("bronze_gladius",
-            () -> new SwordItem(ModTiers.BRONZE,3,-2.4f, props()));
     public static final RegistryObject<PickaxeItem> BRONZE_PICKAXE = ITEMS.register("bronze_pickaxe",
             () -> new PickaxeItem(ModTiers.BRONZE, 1, -2.8f, props()));
     public static final RegistryObject<ShovelItem> BRONZE_SHOVEL = ITEMS.register("bronze_shovel",
