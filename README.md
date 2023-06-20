@@ -9,7 +9,6 @@
 </h1>
 
 <p>This project is still in early development, all features are constantly changing and being updated, so it's recommended to always use the latest version. All alpha versions other than latest are unsupported.</p>
-<p>Testing can be done via <code>./gradlew runClient</code>, now fixed!</p>
 <p>This mod is an addon to the Create mod for 1.19, it aims to expand it by adding a variety of new tools and utilities, focused on Bronze!</p>
 <p>Create's visual in-game documentation called 'Ponder' will guide you through all added mechanics and gadgets.</p>
 <p>&nbsp;</p>
@@ -17,15 +16,16 @@
 
 <h1></h1>
 <h4 align="center">Find out more about Create: Bronze Age on our <a href="https://www.curseforge.com/minecraft/mc-mods/create">Curseforge</a> or <a href="https://modrinth.com/mod/create">Modrinth</a> Page</h4>
+<hr>
 
 ## Authors
-- Raeeeee
-- JankyMuffinz
 - DatCoder464
-## Artists
+- JankyMuffinz
 - Raeeeee
-- Spyril4132
+## Artists
 - 506F7461746F5F436F77626F79
 - Brank
-- SscsreamM
 - JankyMuffinz
+- Raeeeee
+- Spyril4132
+- SscreamMOrSmg6
