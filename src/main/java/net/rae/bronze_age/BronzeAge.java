@@ -19,6 +19,7 @@ import net.rae.bronze_age.block.ModBlocks;
 import net.rae.bronze_age.block_entity.ModBlockEntityType;
 import net.rae.bronze_age.fluid.ModFluidTypes;
 import net.rae.bronze_age.fluid.ModFluids;
+import net.rae.bronze_age.item.AllModItems;
 import net.rae.bronze_age.item.ModItems;
 import net.rae.bronze_age.world.feature.ModConfiguredFeatures;
 import net.rae.bronze_age.world.feature.ModPlacedFeatures;
@@ -38,6 +39,7 @@ public class BronzeAge {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        AllModItems.register();
         ModBlockEntityType.register();
         ModBlocks.register(modEventBus);
 
