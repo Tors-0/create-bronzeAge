@@ -1,4 +1,4 @@
-<p align="center"><img src="https://media.discordapp.net/attachments/889661058707513385/1120076814665134090/image.png?width=1080&height=360" alt="Logo" width="540"></p>
+<p align="center"><img src="https://i.imgur.com/ZxQu4ty.png" alt="Logo" width="540"></p>
 <h1 align="center">Create: Bronze Age<br>
 	<a href="https://www.curseforge.com/minecraft/mc-mods/create/files"><img src="https://img.shields.io/badge/Available%20for-MC%201.19.2-c70039" alt="Supported Versions"></a>
 	<a href="https://github.com/Tors-0/create-bronzeAge/blob/1.19.2-dev/LICENSE"><img src="https://img.shields.io/github/license/Tors-0/create-bronzeAge?style=flat&color=900c3f" alt="License"></a>
