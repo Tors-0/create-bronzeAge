@@ -1,4 +1,4 @@
-package net.rae.bronze_age.world.feature;
+package net.rae.bronze_age.registry;
 
 import net.minecraft.core.Registry;
 import net.minecraft.world.level.levelgen.VerticalAnchor;

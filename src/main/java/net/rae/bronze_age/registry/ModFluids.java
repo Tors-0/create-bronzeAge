@@ -1,4 +1,4 @@
-package net.rae.bronze_age.fluid;
+package net.rae.bronze_age.registry;
 
 import net.minecraft.world.level.material.FlowingFluid;
 import net.minecraft.world.level.material.Fluid;
@@ -8,8 +8,6 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.rae.bronze_age.BronzeAge;
-import net.rae.bronze_age.block.ModBlocks;
-import net.rae.bronze_age.item.ModItems;
 
 public class ModFluids {
     public static final DeferredRegister<Fluid> FLUIDS =

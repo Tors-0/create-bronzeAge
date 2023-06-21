@@ -1,8 +1,5 @@
-package net.rae.bronze_age.block;
+package net.rae.bronze_age.registry;
 
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllSpriteShifts;
-import com.simibubi.create.Create;
 import com.simibubi.create.content.decoration.encasing.CasingBlock;
 import com.simibubi.create.content.kinetics.BlockStressDefaults;
 import com.simibubi.create.content.kinetics.simpleRelays.BracketedKineticBlockModel;
@@ -22,21 +19,18 @@ import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.MaterialColor;
-import net.minecraftforge.common.Tags;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.rae.bronze_age.ModCreativeModeTab;
 import net.rae.bronze_age.ModSpriteShifts;
-import net.rae.bronze_age.fluid.ModFluids;
-import net.rae.bronze_age.item.ModCreativeModeTab;
-import net.rae.bronze_age.item.ModItems;
+import net.rae.bronze_age.content.block.BronzeCogwheelBlock;
 
 import java.util.function.Supplier;
 
 import static com.simibubi.create.foundation.data.BlockStateGen.simpleCubeAll;
 import static com.simibubi.create.foundation.data.TagGen.pickaxeOnly;
-import static com.simibubi.create.foundation.data.TagGen.tagBlockAndItem;
 import static net.rae.bronze_age.BronzeAge.REGISTRATE;
 
 public class ModBlocks {
@@ -106,6 +100,7 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.SAND)), ModCreativeModeTab.COOL_TAB);
     public static final RegistryObject<LiquidBlock> MOLTEN_BRONZE_BLOCK = BLOCKS.register("molten_bronze_block",
             () -> new LiquidBlock(ModFluids.SOURCE_MOLTEN_BRONZE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+
 
     // END BLOCKS
 

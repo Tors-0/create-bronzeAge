@@ -1,4 +1,4 @@
-package net.rae.bronze_age.world.feature;
+package net.rae.bronze_age.registry;
 
 import com.google.common.base.Supplier;
 import com.google.common.base.Suppliers;
@@ -11,8 +11,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.rae.bronze_age.BronzeAge;
-import net.rae.bronze_age.block.ModBlocks;
-
+import net.rae.bronze_age.registry.ModBlocks;
 import java.util.List;
 
 public class ModConfiguredFeatures {
