@@ -21,10 +21,7 @@ public class ModItems {
 
     // bronze casting items here
 
-    public static final RegistryObject<Item> SMALL_BRONZE_COG_ASSEMBLY = ITEMS.register("bronze_gear",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
-    public static final RegistryObject<Item> LARGE_BRONZE_COG_ASSEMBLY = ITEMS.register("large_bronze_gear",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COOL_TAB)));
+
     /*public static final RegistryObject<Item> MOLTEN_BRONZE_BUCKET = ITEMS.register("molten_bronze_bucket",
             () -> new BucketItem(ModFluids.SOURCE_MOLTEN_BRONZE,
                     new Item.Properties().tab(ModCreativeModeTab.COOL_TAB).craftRemainder(Items.BUCKET).stacksTo(1)));*/

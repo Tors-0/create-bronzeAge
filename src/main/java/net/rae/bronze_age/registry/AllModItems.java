@@ -1,22 +1,11 @@
 package net.rae.bronze_age.registry;
 
-import com.tterrag.registrate.util.entry.EntityEntry;
 import com.tterrag.registrate.util.entry.ItemEntry;
-import net.minecraft.client.multiplayer.ClientLevel;
-import net.minecraft.client.renderer.entity.ThrownTridentRenderer;
 import net.minecraft.tags.TagKey;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.MobCategory;
-import net.minecraft.world.entity.projectile.ThrowableItemProjectile;
-import net.minecraft.world.entity.projectile.ThrownTrident;
 import net.minecraft.world.item.*;
-import net.minecraft.world.level.storage.loot.LootTable;
-import net.minecraftforge.common.capabilities.CapabilityProvider;
-import net.rae.bronze_age.BronzeAge;
 import net.rae.bronze_age.ModCreativeModeTab;
 import net.rae.bronze_age.ModTiers;
 import net.rae.bronze_age.content.item.SpearItem;
-import net.rae.bronze_age.content.entity.projectile.ThrownSpear;
 
 import static net.rae.bronze_age.BronzeAge.REGISTRATE;
 import static net.rae.bronze_age.ModTags.forgeItemTag;
@@ -35,7 +24,9 @@ public class AllModItems {
             BRONZE_INGOT = taggedBasicItem("bronze_ingot",forgeItemTag("ingots/bronze"),forgeItemTag("ingots")),
             BRONZE_NUGGET = taggedBasicItem("bronze_nugget",forgeItemTag("nuggets/bronze"),forgeItemTag("nuggets")),
             SMALL_SAND_CAST = basicItem("small_sand_cast"),
-            LARGE_SAND_CAST = basicItem("large_sand_cast");
+            LARGE_SAND_CAST = basicItem("large_sand_cast"),
+            BRONZE_GEAR = basicItem("bronze_gear"),
+            LARGE_BRONZE_GEAR = basicItem("large_bronze_gear");
     public static final ItemEntry<BucketItem> MOLTEN_BRONZE_BUCKET = REGISTRATE.item("molten_bronze_bucket",
                     p -> new BucketItem(ModFluids.SOURCE_MOLTEN_BRONZE,props().craftRemainder(Items.BUCKET).stacksTo(1)))
             .register();
