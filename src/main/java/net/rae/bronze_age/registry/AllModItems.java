@@ -5,6 +5,7 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.*;
 import net.rae.bronze_age.ModCreativeModeTab;
 import net.rae.bronze_age.ModTiers;
+import net.rae.bronze_age.content.block.BronzeCogwheelBlock;
 import net.rae.bronze_age.content.item.SpearItem;
 
 import static net.rae.bronze_age.BronzeAge.REGISTRATE;
@@ -24,9 +25,9 @@ public class AllModItems {
             BRONZE_INGOT = taggedBasicItem("bronze_ingot",forgeItemTag("ingots/bronze"),forgeItemTag("ingots")),
             BRONZE_NUGGET = taggedBasicItem("bronze_nugget",forgeItemTag("nuggets/bronze"),forgeItemTag("nuggets")),
             SMALL_SAND_CAST = basicItem("small_sand_cast"),
-            LARGE_SAND_CAST = basicItem("large_sand_cast"),
-            BRONZE_GEAR = basicItem("bronze_gear"),
-            LARGE_BRONZE_GEAR = basicItem("large_bronze_gear");
+            LARGE_SAND_CAST = basicItem("large_sand_cast");
+    public static final ItemEntry<Item> BRONZE_GEAR = REGISTRATE.item("bronze_gear",Item::new)
+            .register();
     public static final ItemEntry<BucketItem> MOLTEN_BRONZE_BUCKET = REGISTRATE.item("molten_bronze_bucket",
                     p -> new BucketItem(ModFluids.SOURCE_MOLTEN_BRONZE,props().craftRemainder(Items.BUCKET).stacksTo(1)))
             .register();

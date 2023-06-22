@@ -33,6 +33,7 @@ import java.util.function.Supplier;
 import static com.simibubi.create.foundation.data.BlockStateGen.simpleCubeAll;
 import static com.simibubi.create.foundation.data.TagGen.pickaxeOnly;
 import static net.rae.bronze_age.BronzeAge.REGISTRATE;
+import static net.rae.bronze_age.ModTags.forgeBlockTag;
 
 public class ModBlocks {
     static {
@@ -70,7 +71,7 @@ public class ModBlocks {
             .initialProperties(() -> Blocks.GRAVEL)
             .properties(p -> p.color(MaterialColor.COLOR_BLACK))
             .blockstate(simpleCubeAll("basalt_pebbles"))
-            .tag(BlockTags.MINEABLE_WITH_SHOVEL)
+            .tag(BlockTags.MINEABLE_WITH_SHOVEL, forgeBlockTag("gravel"))
             .lang("Basalt Pebbles")
             .item(BlockItem::new)
             .build()
@@ -81,22 +82,33 @@ public class ModBlocks {
             .register();
     public static final BlockEntry<Block> TIN_BLOCK = REGISTRATE.block("tin_block",Block::new)
             .properties(p -> p.requiresCorrectToolForDrops().explosionResistance(6).strength(3))
+            .item(BlockItem::new)
+            .build()
             .register();
     public static final BlockEntry<Block> BRONZE_BLOCK = REGISTRATE.block("bronze_block",Block::new)
             .properties(p -> p.requiresCorrectToolForDrops().explosionResistance(6).strength(3))
+            .item(BlockItem::new)
+            .build()
             .register();
     public static final BlockEntry<DropExperienceBlock> TIN_ORE = REGISTRATE.block("tin_ore", p ->
                     new DropExperienceBlock(BlockBehaviour.Properties.of(Material.METAL)
                             .requiresCorrectToolForDrops().explosionResistance(6).strength(3),
                             UniformInt.of(3,7)))
+            .item(BlockItem::new)
+            .build()
             .register();
     public static final BlockEntry<DropExperienceBlock> DEEPSLATE_TIN_ORE = REGISTRATE.block("deepslate_tin_ore", p ->
             new DropExperienceBlock(BlockBehaviour.Properties.of(Material.METAL)
                     .requiresCorrectToolForDrops().explosionResistance(6).strength(4),
                     UniformInt.of(3,7)))
+            .item(BlockItem::new)
+            .build()
             .register();
-    public static final BlockEntry<Block> WET_SAND = REGISTRATE.block("wet_sand", Block::new)
-            .initialProperties(Material.SAND)
+    public static final BlockEntry<Block> WET_SAND = REGISTRATE.block("wet_sand", p ->
+            new Block(BlockBehaviour.Properties.copy(Blocks.SAND)))
+            .tag(BlockTags.MINEABLE_WITH_SHOVEL)
+            .item(BlockItem::new)
+            .build()
             .register();
     public static final BlockEntry<LiquidBlock> MOLTEN_BRONZE_BLOCK = REGISTRATE.block("molten_bronze_block",b ->
             new LiquidBlock(ModFluids.SOURCE_MOLTEN_BRONZE, BlockBehaviour.Properties.copy(Blocks.LAVA)))

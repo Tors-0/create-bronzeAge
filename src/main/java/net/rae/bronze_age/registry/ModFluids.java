@@ -1,6 +1,5 @@
 package net.rae.bronze_age.registry;
 
-import com.tterrag.registrate.util.entry.FluidEntry;
 import net.minecraft.world.level.material.FlowingFluid;
 import net.minecraft.world.level.material.Fluid;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -22,7 +21,7 @@ public class ModFluids {
     public static final ForgeFlowingFluid.Properties MOLTEN_BRONZE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             ModFluidTypes.MOLTEN_BRONZE_FLUID_TYPE, SOURCE_MOLTEN_BRONZE, FLOWING_MOLTEN_BRONZE)
             .slopeFindDistance(2).levelDecreasePerBlock(3).block(ModBlocks.MOLTEN_BRONZE_BLOCK)
-            .bucket(AllModItems.MOLTEN_BRONZE_BUCKET).tickRate(1);
+            .bucket(AllModItems.MOLTEN_BRONZE_BUCKET).tickRate(30);
 
     public static void register(IEventBus eventBus) {
         FLUIDS.register(eventBus);

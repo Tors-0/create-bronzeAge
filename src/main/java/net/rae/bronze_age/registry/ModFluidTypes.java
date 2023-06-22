@@ -25,7 +25,7 @@ public class ModFluidTypes {
             FluidType.Properties.create().lightLevel(15).density(3000).viscosity(6000)
                     .sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL_LAVA)
                     .sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY_LAVA)
-                    .temperature(1300).pathType(BlockPathTypes.LAVA).adjacentPathType(null)
+                    .temperature(1500).pathType(BlockPathTypes.LAVA).adjacentPathType(null)
                     .canSwim(false).canDrown(false)
     );
 
