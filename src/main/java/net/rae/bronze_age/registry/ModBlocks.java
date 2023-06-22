@@ -17,6 +17,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.LavaFluid;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.MaterialColor;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -78,8 +79,31 @@ public class ModBlocks {
             .properties(p -> p.color(MaterialColor.TERRACOTTA_BROWN))
             .transform(BuilderTransformers.casing(() -> ModSpriteShifts.BRONZE_CASING))
             .register();
+    public static final BlockEntry<Block> TIN_BLOCK = REGISTRATE.block("tin_block",Block::new)
+            .properties(p -> p.requiresCorrectToolForDrops().explosionResistance(6).strength(3))
+            .register();
+    public static final BlockEntry<Block> BRONZE_BLOCK = REGISTRATE.block("bronze_block",Block::new)
+            .properties(p -> p.requiresCorrectToolForDrops().explosionResistance(6).strength(3))
+            .register();
+    public static final BlockEntry<DropExperienceBlock> TIN_ORE = REGISTRATE.block("tin_ore", p ->
+                    new DropExperienceBlock(BlockBehaviour.Properties.of(Material.METAL)
+                            .requiresCorrectToolForDrops().explosionResistance(6).strength(3),
+                            UniformInt.of(3,7)))
+            .register();
+    public static final BlockEntry<DropExperienceBlock> DEEPSLATE_TIN_ORE = REGISTRATE.block("deepslate_tin_ore", p ->
+            new DropExperienceBlock(BlockBehaviour.Properties.of(Material.METAL)
+                    .requiresCorrectToolForDrops().explosionResistance(6).strength(4),
+                    UniformInt.of(3,7)))
+            .register();
+    public static final BlockEntry<Block> WET_SAND = REGISTRATE.block("wet_sand", Block::new)
+            .initialProperties(Material.SAND)
+            .register();
+    public static final BlockEntry<LiquidBlock> MOLTEN_BRONZE_BLOCK = REGISTRATE.block("molten_bronze_block",b ->
+            new LiquidBlock(ModFluids.SOURCE_MOLTEN_BRONZE, BlockBehaviour.Properties.copy(Blocks.LAVA)))
+            .lang("Molten Bronze")
+            .register();
     // BLOCKS
-    public static final RegistryObject<Block> TIN_BLOCK = registerBlock("tin_block",
+    /*public static final RegistryObject<Block> TIN_BLOCK = registerBlock("tin_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
                     .requiresCorrectToolForDrops()
                     .explosionResistance(6).strength(3)), ModCreativeModeTab.COOL_TAB);
@@ -87,7 +111,6 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
                     .requiresCorrectToolForDrops()
                     .explosionResistance(6).strength(3)), ModCreativeModeTab.COOL_TAB);
-
     public static final RegistryObject<Block> TIN_ORE = registerBlock("tin_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.METAL)
                     .requiresCorrectToolForDrops().explosionResistance(6).strength(3),
@@ -99,7 +122,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> WET_SAND = registerBlock("wet_sand",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.SAND)), ModCreativeModeTab.COOL_TAB);
     public static final RegistryObject<LiquidBlock> MOLTEN_BRONZE_BLOCK = BLOCKS.register("molten_bronze_block",
-            () -> new LiquidBlock(ModFluids.SOURCE_MOLTEN_BRONZE, BlockBehaviour.Properties.copy(Blocks.LAVA)));
+            () -> new LiquidBlock(ModFluids.SOURCE_MOLTEN_BRONZE, BlockBehaviour.Properties.copy(Blocks.LAVA)));*/
 
 
     // END BLOCKS

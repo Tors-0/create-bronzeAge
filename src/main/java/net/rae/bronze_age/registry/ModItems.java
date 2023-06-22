@@ -21,6 +21,7 @@ public class ModItems {
 
     // bronze casting items here
 
+    // TODO verify class for deletion (test all items works)
 
     /*public static final RegistryObject<Item> MOLTEN_BRONZE_BUCKET = ITEMS.register("molten_bronze_bucket",
             () -> new BucketItem(ModFluids.SOURCE_MOLTEN_BRONZE,
