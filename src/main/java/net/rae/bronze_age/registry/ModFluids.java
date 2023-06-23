@@ -20,7 +20,7 @@ public class ModFluids {
 
     public static final ForgeFlowingFluid.Properties MOLTEN_BRONZE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             ModFluidTypes.MOLTEN_BRONZE_FLUID_TYPE, SOURCE_MOLTEN_BRONZE, FLOWING_MOLTEN_BRONZE)
-            .slopeFindDistance(2).levelDecreasePerBlock(3).block(ModBlocks.MOLTEN_BRONZE_BLOCK)
+            .slopeFindDistance(3).levelDecreasePerBlock(2).block(ModBlocks.MOLTEN_BRONZE_BLOCK)
             .bucket(AllModItems.MOLTEN_BRONZE_BUCKET).tickRate(30);
 
     public static void register(IEventBus eventBus) {

@@ -1,4 +1,4 @@
-// 1.19.2	2023-06-22T15:46:45.683764413	Registrate Provider for bronze_age [Recipes, Advancements, Loot tables, Tags (blocks), Tags (items), Tags (fluids), Tags (entity_types), Blockstates, Item models, Lang (en_us/en_ud)]
+// 1.19.2	2023-06-23T14:51:49.581569028	Registrate Provider for bronze_age [Recipes, Advancements, Loot tables, Tags (blocks), Tags (items), Tags (fluids), Tags (entity_types), Blockstates, Item models, Lang (en_us/en_ud)]
 9544cb079ad6e4da06901b78d04b13e5eee6a731 assets/bronze_age/blockstates/basalt_pebbles.json
 c6941b3172bbb23a5fcb15f729505a41f8f002ea assets/bronze_age/blockstates/bronze_block.json
 f244bbbc247e1d1b294687252d2630acbb801345 assets/bronze_age/blockstates/bronze_casing.json
@@ -6,16 +6,18 @@ f244bbbc247e1d1b294687252d2630acbb801345 assets/bronze_age/blockstates/bronze_ca
 4b8526407d6fd83fb8c4154bc485b8db393cba37 assets/bronze_age/blockstates/deepslate_tin_ore.json
 dca6e6edba499a3fe04ad7e8671582e2fe52475f assets/bronze_age/blockstates/large_bronze_cogwheel.json
 e74a3d340e5cca1fa4674ceed22cb26cf1756d14 assets/bronze_age/blockstates/molten_bronze_block.json
+944c34c7f85719a754b126daf1998d7ac5b42076 assets/bronze_age/blockstates/raw_tin_block.json
 465ca67ef7ea1ea3b2858fb4f030f815b1ba964d assets/bronze_age/blockstates/tin_block.json
 ae18375276890eaf744fba4cb010fa2b2f9c1129 assets/bronze_age/blockstates/tin_ore.json
 47b6627ba77869db0342d24cb58ecc62abda1df5 assets/bronze_age/blockstates/wet_sand.json
-348079632aea3435f81a3770021baed274345c66 assets/bronze_age/lang/en_ud.json
-8a9343db03bba4116f64cec9319d8d200f4ade1a assets/bronze_age/lang/en_us.json
+d2473ed61e32e6e30ea9de7aa082482f5d7b0fb7 assets/bronze_age/lang/en_ud.json
+e14af7cf807ff8bf1d74e77d61a7a5e99ecd665b assets/bronze_age/lang/en_us.json
 0706723402bcd86f9271017a7fa6df1ba783766e assets/bronze_age/models/block/basalt_pebbles.json
 5a690d92f29564c4414f33c24610d6a6af2ac06a assets/bronze_age/models/block/bronze_block.json
 553a20ef810cb631b5251bbcb7d16830faa63936 assets/bronze_age/models/block/bronze_casing.json
 7551aa3c2a5c6f324df24b4702ec8c29b7eade5e assets/bronze_age/models/block/deepslate_tin_ore.json
 4d9bdd7ff24bcef77cfeb2adb67d0489e0b57545 assets/bronze_age/models/block/molten_bronze_block.json
+1f2b2045fe4f489bf4b458bd446f0f44a8c0aa7e assets/bronze_age/models/block/raw_tin_block.json
 d91fce859d695ec5bf6191891921cb55c3b0b141 assets/bronze_age/models/block/tin_block.json
 70a98f54cf35d31c5d35994e18203992189e7662 assets/bronze_age/models/block/tin_ore.json
 da44a08e440f0a19f866e22d9ed0ecf285197402 assets/bronze_age/models/block/wet_sand.json
@@ -35,9 +37,11 @@ a2be80aaeb033d61b7cb44f6b2b8089902f4f254 assets/bronze_age/models/item/bronze_pl
 4499404bcaef5fc2625a368a2605c456d028deb2 assets/bronze_age/models/item/bronze_sword.json
 16538af83a57add7dc28f2e078711a77a85c7aa0 assets/bronze_age/models/item/deepslate_tin_ore.json
 0728b7625976ab84429098b59def4485febc1804 assets/bronze_age/models/item/large_bronze_cogwheel.json
+d57d435c91be9f12b64aafd290e90840df6f5ab0 assets/bronze_age/models/item/large_bronze_gear.json
 8233e90d8e971b012ca2bbdd74fa0c8352076f54 assets/bronze_age/models/item/large_sand_cast.json
 a65c8b661100f618cd536f86f7c77220d32a407f assets/bronze_age/models/item/molten_bronze_bucket.json
 b50fbf415c589d4373b3f2c225e37fdbc21c13d7 assets/bronze_age/models/item/raw_tin.json
+84d3fe1c3e83c4149a52a0e8e2a921fb42a3ae1c assets/bronze_age/models/item/raw_tin_block.json
 ac300b15235bb2356a38879b6bf159d86d3d408b assets/bronze_age/models/item/small_sand_cast.json
 35e0662ac0275f61b860fd1f2712bac55f925b28 assets/bronze_age/models/item/tin_block.json
 79cc2c349d9ed58a4315a07dd90603a529d65e05 assets/bronze_age/models/item/tin_ingot.json
@@ -51,6 +55,7 @@ e515e4085dcd6cb0f1b47567cdd8c797ba4673a9 data/bronze_age/loot_tables/blocks/bron
 e808a85489cbd536251203008be214dcfffe1b22 data/bronze_age/loot_tables/blocks/deepslate_tin_ore.json
 82dca05ccbfac6cc648523eba1f4d172e4bec48d data/bronze_age/loot_tables/blocks/large_bronze_cogwheel.json
 2b2a4bde1a1c86393b28fa3ff9b81ef1ddeed22d data/bronze_age/loot_tables/blocks/molten_bronze_block.json
+00d90dfe49b04bb1b208263865ee8a2c312308cb data/bronze_age/loot_tables/blocks/raw_tin_block.json
 19e3e1e72375289e83be8c5eb7d5cd8c919b785e data/bronze_age/loot_tables/blocks/tin_block.json
 09c7a69235d570c999dc61266a2b9309198d42f0 data/bronze_age/loot_tables/blocks/tin_ore.json
 4ea2e48f212e901f8eb6cab5db101cd444f6ba1c data/bronze_age/loot_tables/blocks/wet_sand.json

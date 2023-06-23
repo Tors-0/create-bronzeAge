@@ -1,13 +1,24 @@
 package net.rae.bronze_age.registry;
 
+import com.tterrag.registrate.providers.RegistrateItemModelProvider;
 import com.tterrag.registrate.util.entry.ItemEntry;
+import net.minecraft.client.renderer.entity.ThrownTridentRenderer;
+import net.minecraft.client.resources.model.ModelResourceLocation;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.item.*;
+import net.minecraft.world.level.storage.loot.LootTable;
+import net.minecraftforge.client.model.generators.ModelFile;
+import net.minecraftforge.common.data.ExistingFileHelper;
 import net.rae.bronze_age.ModCreativeModeTab;
 import net.rae.bronze_age.ModTiers;
 import net.rae.bronze_age.content.block.BronzeCogwheelBlock;
+import net.rae.bronze_age.content.entity.projectile.ThrownSpear;
 import net.rae.bronze_age.content.item.SpearItem;
 
+import static net.minecraftforge.client.model.generators.ModelFile.*;
 import static net.rae.bronze_age.BronzeAge.REGISTRATE;
 import static net.rae.bronze_age.ModTags.forgeItemTag;
 
@@ -27,6 +38,9 @@ public class AllModItems {
             SMALL_SAND_CAST = basicItem("small_sand_cast"),
             LARGE_SAND_CAST = basicItem("large_sand_cast");
     public static final ItemEntry<Item> BRONZE_GEAR = REGISTRATE.item("bronze_gear",Item::new)
+            //.model(p -> new ExistingModelFile(new ResourceLocation("")))
+            .register();
+    public static final ItemEntry<Item> LARGE_BRONZE_GEAR = REGISTRATE.item("large_bronze_gear",Item::new)
             .register();
     public static final ItemEntry<BucketItem> MOLTEN_BRONZE_BUCKET = REGISTRATE.item("molten_bronze_bucket",
                     p -> new BucketItem(ModFluids.SOURCE_MOLTEN_BRONZE,props().craftRemainder(Items.BUCKET).stacksTo(1)))
@@ -37,13 +51,13 @@ public class AllModItems {
             .register();
     // Bronze tools/uniques
     public static final ItemEntry<SpearItem> BRONZE_SPEAR = REGISTRATE.item("bronze_spear", SpearItem::new)
+            .properties(p -> p.defaultDurability(50))
             .register();
-    /* SPEAR ITEM GONNA BE LAME UNTIL THIS PART WORKS, IDK WHATS WRONG AND TTERAG STOPPED HELPING
     public static final EntityType<ThrownSpear> THROWN_BRONZE_SPEAR = REGISTRATE.object("thrown_bronze_spear")
             .entity(ThrownSpear::new, MobCategory.MISC)
             .loot((tb, e) -> tb.add(e, LootTable.lootTable()))
             .renderer(() -> ThrownTridentRenderer::new)
-            .register();*/
+            .register();
     public static final ItemEntry<SwordItem> BRONZE_SWORD =
             REGISTRATE.item("bronze_sword", p -> new SwordItem(ModTiers.BRONZE,3,-2.4f,props()))
                     .lang("Bronze Gladius")
