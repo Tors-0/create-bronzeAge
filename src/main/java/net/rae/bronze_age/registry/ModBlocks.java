@@ -104,6 +104,11 @@ public class ModBlocks {
             .item(BlockItem::new)
             .build()
             .register();
+    public static final BlockEntry<Block> RAW_TIN_BLOCK = REGISTRATE.block("raw_tin_block", Block::new)
+            .lang("Block of Raw Tin")
+            .item(BlockItem::new)
+            .build()
+            .register();
     public static final BlockEntry<Block> WET_SAND = REGISTRATE.block("wet_sand", p ->
             new Block(BlockBehaviour.Properties.copy(Blocks.SAND)))
             .tag(BlockTags.MINEABLE_WITH_SHOVEL)
