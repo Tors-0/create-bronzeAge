@@ -26,5 +26,7 @@
   "item.bronze_age.raw_tin": "Raw Tin",
   "item.bronze_age.small_sand_cast": "Small Sand Cast",
   "item.bronze_age.tin_ingot": "Tin Ingot",
-  "item.bronze_age.tin_nugget": "Tin Nugget"
+  "item.bronze_age.tin_nugget": "Tin Nugget",
+  "fluid_type.bronze_age.molten_bronze_fluid": "Molten Bronze",
+  "itemGroup.cooltab": "Create: Bronze Age"
 }
