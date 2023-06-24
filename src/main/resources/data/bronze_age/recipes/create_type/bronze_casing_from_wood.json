@@ -1,0 +1,16 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "tag": "forge:stripped_wood"
+    },
+    {
+      "item": "bronze_age:bronze_ingot"
+    }
+  ],
+  "results": [
+    {
+      "item": "bronze_age:bronze_casing"
+    }
+  ]
+}

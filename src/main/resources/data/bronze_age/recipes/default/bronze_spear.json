@@ -9,11 +9,11 @@
     }
   },
   "pattern": [
-    "X",
-    "X",
-    "#"
+    "  X",
+    " # ",
+    "#  "
   ],
   "result": {
-    "item": "bronze_age:bronze_sword"
+    "item": "bronze_age:bronze_spear"
   }
 }
