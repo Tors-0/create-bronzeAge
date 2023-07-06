@@ -1,6 +1,7 @@
 package net.rae.bronze_age.registry;
 
-import static net.rae.bronze_age.BronzeAge.REGISTRATE;
+
+import static net.rae.bronze_age.registry.ModRegistrate.REGISTRATE;
 
 public class ModLang {
     static {

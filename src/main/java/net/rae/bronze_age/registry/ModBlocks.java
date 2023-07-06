@@ -17,7 +17,6 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.LavaFluid;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.MaterialColor;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -27,15 +26,17 @@ import net.minecraftforge.registries.RegistryObject;
 import net.rae.bronze_age.ModCreativeModeTab;
 import net.rae.bronze_age.ModSpriteShifts;
 import net.rae.bronze_age.content.block.BronzeCogwheelBlock;
+import net.rae.bronze_age.content.block.BronzeKeyBlock;
+import net.rae.bronze_age.content.block.RotaryNOTBlock;
 
 import java.util.function.Supplier;
 
 import static com.simibubi.create.foundation.data.BlockStateGen.simpleCubeAll;
 import static com.simibubi.create.foundation.data.TagGen.pickaxeOnly;
-import static net.rae.bronze_age.BronzeAge.REGISTRATE;
 import static net.rae.bronze_age.ModTags.forgeBlockTag;
+import static net.rae.bronze_age.registry.ModRegistrate.REGISTRATE;
 
-public class ModBlocks {
+public class  ModBlocks {
     static {
         REGISTRATE.creativeModeTab(() -> ModCreativeModeTab.COOL_TAB);
     }
@@ -67,6 +68,26 @@ public class ModBlocks {
                     .item(CogwheelBlockItem::new)
                     .build()
                     .register();
+
+    //public static final BlockEntry<WoundSpringBlock> WOUND_UP_SPRING = REGISTRATE.block("wound_spring", WoundSpringBlock::new).initialProperties(SharedProperties::stone).properties(p -> p.sound(SoundType.METAL)).properties(p -> p.color(MaterialColor.METAL)).transform(pickaxeOnly()).register(); //VERY wip, id suggest not touching it
+
+    public static final BlockEntry<BronzeKeyBlock> BRONZE_KEY =
+            REGISTRATE.block("bronze_key", BronzeKeyBlock::new)
+                    .item(BlockItem::new)
+                    .build()
+                    .register();
+
+    public static final BlockEntry<RotaryNOTBlock> ROTARY_NOT =
+            REGISTRATE.block("rotary_not", RotaryNOTBlock::new)
+                    .initialProperties(SharedProperties::stone)
+                    .properties(p -> p.sound(SoundType.METAL))
+                    .properties(p -> p.color(MaterialColor.METAL))
+                    .item(BlockItem::new)
+                    .build()
+                    .register();
+
+
+
     public static final BlockEntry<GravelBlock> BASALT_PEBBLES = REGISTRATE.block("basalt_pebbles", GravelBlock::new)
             .initialProperties(() -> Blocks.GRAVEL)
             .properties(p -> p.color(MaterialColor.COLOR_BLACK))
@@ -90,6 +111,7 @@ public class ModBlocks {
             .item(BlockItem::new)
             .build()
             .register();
+
     public static final BlockEntry<DropExperienceBlock> TIN_ORE = REGISTRATE.block("tin_ore", p ->
                     new DropExperienceBlock(BlockBehaviour.Properties.of(Material.METAL)
                             .requiresCorrectToolForDrops().explosionResistance(6).strength(3),
@@ -105,7 +127,6 @@ public class ModBlocks {
             .build()
             .register();
     public static final BlockEntry<Block> RAW_TIN_BLOCK = REGISTRATE.block("raw_tin_block", Block::new)
-            .lang("Block of Raw Tin")
             .item(BlockItem::new)
             .build()
             .register();
@@ -117,8 +138,11 @@ public class ModBlocks {
             .register();
     public static final BlockEntry<LiquidBlock> MOLTEN_BRONZE_BLOCK = REGISTRATE.block("molten_bronze_block",b ->
             new LiquidBlock(ModFluids.SOURCE_MOLTEN_BRONZE, BlockBehaviour.Properties.copy(Blocks.LAVA)))
-            .lang("Molten Bronze")
+            //.lang("Molten Bronze")
             .register();
+    //DAT: dont do .lang its stupid and clutters stuff since we now have datagen which does this for us
+
+
     // BLOCKS
     /*public static final RegistryObject<Block> TIN_BLOCK = registerBlock("tin_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)

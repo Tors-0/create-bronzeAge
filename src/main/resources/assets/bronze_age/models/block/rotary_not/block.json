@@ -1,0 +1,12 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "create:block/gearshift",
+	"textures": {
+		"0": "bronze_age:block/bronze_constant_gearshift",
+		"1": "bronze_age:block/bronze_gearbox",
+		"2": "create:block/funnel/andesite_funnel_frame",
+		"particle": "bronze_age:block/bronze_constant_gearshift"
+	},
+	"name": "",
+	"title": ""
+}

@@ -1,0 +1,8 @@
+{
+  "parent" : "bronze_age:block/rotary_not",
+  "textures": {
+    "0": "bronze_age:block/bronze_constant_gearshift",
+    "1": "bronze_age:block/bronze_gearbox",
+    "2": "create:block/funnel/andesite_funnel_frame"
+  }
+}

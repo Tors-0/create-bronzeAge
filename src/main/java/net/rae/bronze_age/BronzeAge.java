@@ -2,7 +2,6 @@ package net.rae.bronze_age;
 // YT Tutorial Playlist:
 // https://www.youtube.com/playlist?list=PLKGarocXCE1HrC60yuTNTGRoZc6hf5Uvl
 
-import com.simibubi.create.foundation.data.CreateRegistrate;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.resources.ResourceLocation;
@@ -18,6 +17,8 @@ import net.rae.bronze_age.registry.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import static net.rae.bronze_age.registry.ModRegistrate.REGISTRATE;
+
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(BronzeAge.MOD_ID)
 public class BronzeAge {
@@ -27,7 +28,6 @@ public class BronzeAge {
     public static final String NAME = "Bronze age";
     public static final Logger LOGGER = LoggerFactory.getLogger(NAME);
 
-    public static final CreateRegistrate REGISTRATE = ModRegistrate.REGISTRATE;
 
     public BronzeAge() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -35,7 +35,7 @@ public class BronzeAge {
         AllModItems.register();
         ModItems.register(modEventBus);
 
-        ModBlockEntityType.register();
+        ModBlockEntityTypes.register();
         ModBlocks.register(modEventBus);
 
         REGISTRATE.registerEventListeners(modEventBus);

@@ -1,27 +1,14 @@
 package net.rae.bronze_age.registry;
 
-import com.tterrag.registrate.providers.RegistrateItemModelProvider;
 import com.tterrag.registrate.util.entry.ItemEntry;
-import net.minecraft.client.renderer.entity.ThrownTridentRenderer;
-import net.minecraft.client.resources.model.ModelResourceLocation;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.item.*;
-import net.minecraft.world.level.storage.loot.LootTable;
-import net.minecraftforge.client.model.generators.ModelFile;
-import net.minecraftforge.common.data.ExistingFileHelper;
 import net.rae.bronze_age.ModCreativeModeTab;
 import net.rae.bronze_age.ModTiers;
-import net.rae.bronze_age.content.block.BronzeCogwheelBlock;
-import net.rae.bronze_age.content.entity.projectile.ThrownSpear;
 import net.rae.bronze_age.content.item.SpearItem;
-import net.rae.bronze_age.content.renderer.ThrownSpearRenderer;
 
-import static net.minecraftforge.client.model.generators.ModelFile.*;
-import static net.rae.bronze_age.BronzeAge.REGISTRATE;
 import static net.rae.bronze_age.ModTags.forgeItemTag;
+import static net.rae.bronze_age.registry.ModRegistrate.REGISTRATE;
 
 public class AllModItems {
     static {

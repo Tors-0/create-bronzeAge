@@ -1,0 +1,7 @@
+{
+  "parent" : "bronze_age:block/bronze_key",
+  "textures": {
+    "0": "bromz_keyh",
+    "1": "bromz_keyh_part2"
+  }
+}
