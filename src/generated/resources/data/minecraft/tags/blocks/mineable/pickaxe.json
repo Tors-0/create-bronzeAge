@@ -3,6 +3,7 @@
     "bronze_age:bronze_cogwheel",
     "bronze_age:large_bronze_cogwheel",
     "bronze_age:wound_spring",
-    "bronze_age:bronze_casing"
+    "bronze_age:bronze_casing",
+    "#bronze_age:blocks/tin_ores"
   ]
 }
